@@ -6,16 +6,18 @@ readme = "PROJECT_DOCUMENTATION.md"
 requires-python = ">=3.12"
 authors = [
     { name = "Mohammad Ebrahim SHARIFI", email = "mohammad-ebrahim.sharifi@etu.u-paris.fr" },
-    { name = "PARTNER NAME", email = "partner@example.com" },
 ]
 dependencies = [
     "langchain>=0.3",
     "langchain-community>=0.3",
     "langchain-google-genai>=2.0",
-    "docling>=2.70,<3.0",
     "pypdf>=5.0",
     "python-dotenv>=1.0",
+    "docling>=2.128.0"
 ]
+
+[project.scripts]
+rag-parse = "rag_project.scripts.parse:main"
 
 [dependency-groups]
 dev = [
