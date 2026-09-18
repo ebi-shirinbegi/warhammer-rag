@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.env
+.env.*
+!.env.example
+
+# Local database and generated indexes
+*.sqlite
+*.sqlite3
+*.db
+data/chroma/
+data/vectorstore/
+
+# Local IDE and OS files
+.DS_Store
+.vscode/*
+!.vscode/settings.json
