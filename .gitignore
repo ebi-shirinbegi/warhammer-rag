@@ -1,21 +1,35 @@
-.venv/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
+# Local credentials and secret files.
 .env
 .env.*
 !.env.example
+*.pem
 
-# Local database and generated indexes
-*.sqlite
-*.sqlite3
-*.db
-data/chroma/
-data/vectorstore/
+# Local Python/tool environments and caches.
+.venv/
+.tools/
+.cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
 
-# Local IDE and OS files
+# Rebuildable indexes and experiment output; parsed artifacts remain versioned.
+data/indexes/*
+!data/indexes/README.md
+evaluation/reports/*
+!evaluation/reports/README.md
+logs/
+tmp/
+
+# Local editor/OS files.
 .DS_Store
-.vscode/*
-!.vscode/settings.json
+.idea/
+.vscode/
+
+# Local assignment and lecture reference material.
+/course/

@@ -1,0 +1,648 @@
+{
+  "cost_descriptions": [
+    {
+      "description": "1 model",
+      "n": 1966
+    },
+    {
+      "description": "YOUR UNIT COSTS",
+      "n": 1691
+    },
+    {
+      "description": "10 models",
+      "n": 354
+    },
+    {
+      "description": "5 models",
+      "n": 341
+    },
+    {
+      "description": "YOUR 3RD + UNIT COSTS",
+      "n": 339
+    },
+    {
+      "description": "YOUR 1ST TO 2ND UNITS COST",
+      "n": 339
+    },
+    {
+      "description": "3 models",
+      "n": 228
+    },
+    {
+      "description": "6 models",
+      "n": 166
+    },
+    {
+      "description": "2 models",
+      "n": 114
+    },
+    {
+      "description": "YOUR 2ND + UNIT COSTS",
+      "n": 110
+    },
+    {
+      "description": "YOUR 1ST UNIT COSTS",
+      "n": 110
+    },
+    {
+      "description": "WARGEAR OPTIONS",
+      "n": 85
+    },
+    {
+      "description": "YOUR 4TH + UNIT COSTS",
+      "n": 55
+    },
+    {
+      "description": "YOUR 1ST TO 3RD UNITS COST",
+      "n": 55
+    },
+    {
+      "description": "4 models",
+      "n": 47
+    },
+    {
+      "description": "20 models",
+      "n": 29
+    },
+    {
+      "description": "per Multi-melta",
+      "n": 18
+    },
+    {
+      "description": "per Plasma cannon",
+      "n": 16
+    },
+    {
+      "description": "per Lascannon",
+      "n": 16
+    },
+    {
+      "description": "Assigned Agent",
+      "n": 14
+    },
+    {
+      "description": "AGENTS OF THE IMPERIUM Detachment",
+      "n": 14
+    },
+    {
+      "description": "11 models",
+      "n": 14
+    },
+    {
+      "description": "8 models",
+      "n": 13
+    },
+    {
+      "description": "7 models",
+      "n": 12
+    },
+    {
+      "description": "9 models",
+      "n": 11
+    },
+    {
+      "description": "16 models",
+      "n": 10
+    },
+    {
+      "description": "per Heavy laser destroyer",
+      "n": 8
+    },
+    {
+      "description": "per Twin lascannon",
+      "n": 7
+    },
+    {
+      "description": "12 models",
+      "n": 7
+    },
+    {
+      "description": "per Psycannon",
+      "n": 5
+    },
+    {
+      "description": "per Heavy reaper autocannon",
+      "n": 5
+    },
+    {
+      "description": "per Hades lascannon",
+      "n": 5
+    },
+    {
+      "description": "per Thunder Hammer",
+      "n": 4
+    },
+    {
+      "description": "+ 1 Invader ATV",
+      "n": 4
+    },
+    {
+      "description": "per Twin multi-melta",
+      "n": 3
+    },
+    {
+      "description": "per Macro plasma incinerator",
+      "n": 3
+    },
+    {
+      "description": "per Ectoplasma cannon",
+      "n": 3
+    },
+    {
+      "description": "per Storm Shield",
+      "n": 2
+    },
+    {
+      "description": "per Krieg heavy flamer",
+      "n": 2
+    },
+    {
+      "description": "per Heavy psycannon",
+      "n": 2
+    },
+    {
+      "description": "per Demolisher battle cannon",
+      "n": 2
+    },
+    {
+      "description": "per Dark lance",
+      "n": 2
+    },
+    {
+      "description": "per Bombast field gun",
+      "n": 2
+    },
+    {
+      "description": "6 Wolf Guard Headtakers, 6 Hunting Wolves",
+      "n": 2
+    },
+    {
+      "description": "6 Wolf Guard Headtakers",
+      "n": 2
+    },
+    {
+      "description": "3 Wolf Guard Headtakers, 3 Hunting Wolves",
+      "n": 2
+    },
+    {
+      "description": "3 Wolf Guard Headtakers",
+      "n": 2
+    },
+    {
+      "description": "per ard case",
+      "n": 1
+    },
+    {
+      "description": "per Venatari lance",
+      "n": 1
+    },
+    {
+      "description": "per Twin haywire blaster",
+      "n": 1
+    },
+    {
+      "description": "per Twin cognis lascannon",
+      "n": 1
+    },
+    {
+      "description": "per Twin arachnus heavy blaze cannon",
+      "n": 1
+    },
+    {
+      "description": "per T&#x27;au flamer",
+      "n": 1
+    },
+    {
+      "description": "per Sublimator",
+      "n": 1
+    },
+    {
+      "description": "per Rupture cannon",
+      "n": 1
+    },
+    {
+      "description": "per Rapid-fire battle cannon",
+      "n": 1
+    },
+    {
+      "description": "per Missile pod",
+      "n": 1
+    },
+    {
+      "description": "per Meltagun",
+      "n": 1
+    },
+    {
+      "description": "per Ion rifle",
+      "n": 1
+    },
+    {
+      "description": "per Ion accelerator",
+      "n": 1
+    },
+    {
+      "description": "per High-yield missile pods",
+      "n": 1
+    },
+    {
+      "description": "per Heavy wraithcannon",
+      "n": 1
+    },
+    {
+      "description": "per Heavy mining laser",
+      "n": 1
+    },
+    {
+      "description": "per Haywire blaster",
+      "n": 1
+    },
+    {
+      "description": "per Ferrumite cannon",
+      "n": 1
+    },
+    {
+      "description": "per Despoiler gatling cannon",
+      "n": 1
+    },
+    {
+      "description": "per Despoiler battle cannon",
+      "n": 1
+    },
+    {
+      "description": "per Cyclic Ion Raker",
+      "n": 1
+    },
+    {
+      "description": "per Blades of honour",
+      "n": 1
+    },
+    {
+      "description": "per Banner of Macragge",
+      "n": 1
+    },
+    {
+      "description": "per Acid spray",
+      "n": 1
+    },
+    {
+      "description": "WARGEAR COSTS REMOVED",
+      "n": 1
+    },
+    {
+      "description": "22 models",
+      "n": 1
+    },
+    {
+      "description": "20 Gretchin",
+      "n": 1
+    },
+    {
+      "description": "2 Runtherd, 20 Gretchin",
+      "n": 1
+    },
+    {
+      "description": "15 models",
+      "n": 1
+    },
+    {
+      "description": "10 Gretchin",
+      "n": 1
+    },
+    {
+      "description": "1 Sword Brother, 8 Neophytes, 11 Initiates",
+      "n": 1
+    },
+    {
+      "description": "1 Sword Brother, 4 Neophytes, 5 Initiates",
+      "n": 1
+    },
+    {
+      "description": "1 Runtherd, 20 Gretchin",
+      "n": 1
+    },
+    {
+      "description": "1 Runtherd, 10 Gretchin",
+      "n": 1
+    },
+    {
+      "description": "+ 1 Tidewall Defence Platform",
+      "n": 1
+    }
+  ],
+  "unit_name_faction_duplicates": [
+    {
+      "name": "Gladiator Lancer",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Gladiator Reaper",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Gladiator Valiant",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Impulsor",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Land Raider Crusader",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Repulsor",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Repulsor Executioner",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Sternguard Veteran Squad",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Terminator Squad",
+      "factionId": "SM",
+      "n": 2
+    },
+    {
+      "name": "Venerable Dreadnought",
+      "factionId": "SM",
+      "n": 2
+    }
+  ],
+  "ability_compound_duplicates": [],
+  "cross_faction_links": [
+    {
+      "kind": "enhancements",
+      "n": 4
+    },
+    {
+      "kind": "stratagems",
+      "n": 0
+    },
+    {
+      "kind": "detachment_abilities",
+      "n": 0
+    }
+  ],
+  "datasheet_keywords_top": [
+    {
+      "keyword": "Infantry",
+      "n": 765
+    },
+    {
+      "keyword": "Imperium",
+      "n": 741
+    },
+    {
+      "keyword": "Vehicle",
+      "n": 642
+    },
+    {
+      "keyword": "Character",
+      "n": 565
+    },
+    {
+      "keyword": "Chaos",
+      "n": 465
+    },
+    {
+      "keyword": "Grenades",
+      "n": 437
+    },
+    {
+      "keyword": "Fly",
+      "n": 330
+    },
+    {
+      "keyword": "Frame",
+      "n": 312
+    },
+    {
+      "keyword": "Smoke",
+      "n": 308
+    },
+    {
+      "keyword": "Adeptus Astartes",
+      "n": 292
+    },
+    {
+      "keyword": "Astra Militarum",
+      "n": 234
+    },
+    {
+      "keyword": "Epic Hero",
+      "n": 209
+    },
+    {
+      "keyword": "Transport",
+      "n": 173
+    },
+    {
+      "keyword": "Walker",
+      "n": 171
+    },
+    {
+      "keyword": "Heretic Astartes",
+      "n": 166
+    },
+    {
+      "keyword": "Daemon",
+      "n": 146
+    },
+    {
+      "keyword": "Aeldari",
+      "n": 145
+    },
+    {
+      "keyword": "Psyker",
+      "n": 143
+    },
+    {
+      "keyword": "Genestealer Cults",
+      "n": 139
+    },
+    {
+      "keyword": "Titanic",
+      "n": 138
+    },
+    {
+      "keyword": "Mounted",
+      "n": 123
+    },
+    {
+      "keyword": "Monster",
+      "n": 102
+    },
+    {
+      "keyword": "Legiones Daemonica",
+      "n": 101
+    },
+    {
+      "keyword": "Nurgle",
+      "n": 99
+    },
+    {
+      "keyword": "Great Devourer",
+      "n": 95
+    }
+  ],
+  "keyword_dup_example": [
+    {
+      "keyword": "Character",
+      "n": 1
+    },
+    {
+      "keyword": "Great Devourer",
+      "n": 1
+    },
+    {
+      "keyword": "Hive Tyrant",
+      "n": 1
+    },
+    {
+      "keyword": "Monster",
+      "n": 1
+    },
+    {
+      "keyword": "Psyker",
+      "n": 1
+    },
+    {
+      "keyword": "Synapse",
+      "n": 1
+    },
+    {
+      "keyword": "Tyranids",
+      "n": 1
+    }
+  ],
+  "query1_snapshot": [
+    {
+      "Id": "000000460",
+      "name": "Hive Tyrant",
+      "faction_name": "Tyranids",
+      "source_name": "Tyranids",
+      "edition": "11",
+      "LastUpdate": "2026-09-01 17:05:19"
+    }
+  ],
+  "query_abilities_corrected": [
+    {
+      "line": "1",
+      "type": "Core",
+      "ability_id": "000008339",
+      "ability_name": "Deadly Demise",
+      "ability_text": "DEADLY DEMISE24.08From detonating ammo stores to corrosive innards or frenzied death throes, some targets are deadly even in defeat.This ability always takes the form Deadly Demise X. Each time a model with this ability is destroyed, after the units embarked within it (if any) have made their emergency disembark moves, roll one D6. On a 6, that model suffers a deadly demise; each unit within 6\" of that model suffers a number of mortal wounds denoted by X (if this is a random number, roll separately for each unit within 6\").",
+      "parameter": "D3"
+    },
+    {
+      "line": "2",
+      "type": "Core",
+      "ability_id": "000008346",
+      "ability_name": "Leader",
+      "ability_text": "LEADER24.22Mighty heroes fight at the forefront of battle.Before the battle, in the Muster Armies step, for each leader and support unit in your army, you can select one friendly bodyguard unit that unit can lead. That unit will then lead that bodyguard unit for the battle and form an attached unit with it.Unless otherwise stated, each bodyguard unit can only have one leader unit and one support unit attached to it.",
+      "parameter": ""
+    },
+    {
+      "line": "3",
+      "type": "Faction",
+      "ability_id": "000000707",
+      "ability_name": "Shadow in the Warp",
+      "ability_text": "If your Army Faction is TYRANIDS, once per battle, in either player\u00e2\u0080\u0099s Command phase, if one or more units from your army with this ability are on the battlefield, you can unleash the Shadow in the Warp. When you do, each enemy unit on the battlefield must take a Battle-shock test. Each time an enemy unit takes such a Battle-shock test, if it is within 6\" of one or more Synapse units from your army, subtract 1 from that test.",
+      "parameter": ""
+    },
+    {
+      "line": "4",
+      "type": "Faction",
+      "ability_id": "000000705",
+      "ability_name": "Synapse",
+      "ability_text": "If your Army Faction is TYRANIDS, while a TYRANIDS unit from your army is within 6\" of one or more friendly Synapse models, that TYRANIDS unit is said to be within Synapse Range of that model and of your army. While a TYRANIDS unit from your army is within Synapse Range of your army: Each time that unit takes a Battle-shock test, take that test on 3D6 instead of 2D6. Each time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack.",
+      "parameter": ""
+    },
+    {
+      "line": "5",
+      "type": "Datasheet",
+      "ability_id": null,
+      "ability_name": "Will of the Hive Mind",
+      "ability_text": "Once per battle round, one model from your army with this ability can use it when a friendly TYRANIDS unit within 12\" of that model is targeted with a Stratagem. If it does, reduce the CP cost of that usage of that Stratagem by 1CP.",
+      "parameter": ""
+    },
+    {
+      "line": "6",
+      "type": "Datasheet",
+      "ability_id": null,
+      "ability_name": "Onslaught (Aura, Psychic)",
+      "ability_text": "While a friendly TYRANIDS unit is within 6\" of this model, ranged weapons equipped by models in that unit have the [ASSAULT] and [LETHAL HITS] abilities.",
+      "parameter": ""
+    }
+  ],
+  "query_tyr_detachment_count": [
+    {
+      "n": 14
+    }
+  ],
+  "query_hive_lead_units": [
+    {
+      "Id": "000000471",
+      "name": "Tyrant Guard"
+    }
+  ],
+  "query_tyr_battleline": [
+    {
+      "Id": "000000484",
+      "name": "Gargoyles"
+    },
+    {
+      "Id": "000000469",
+      "name": "Hormagaunts"
+    },
+    {
+      "Id": "000000468",
+      "name": "Termagants"
+    }
+  ],
+  "query_tyr_cost_range": [
+    {
+      "Id": "000000496",
+      "name": "Tyrannofex",
+      "min_cost": 10,
+      "max_cost": 180
+    },
+    {
+      "Id": "000000470",
+      "name": "Ripper Swarms",
+      "min_cost": 30,
+      "max_cost": 50
+    },
+    {
+      "Id": "000000487",
+      "name": "Mucolid Spores",
+      "min_cost": 30,
+      "max_cost": 60
+    },
+    {
+      "Id": "000000477",
+      "name": "Pyrovores",
+      "min_cost": 40,
+      "max_cost": 110
+    },
+    {
+      "Id": "000002687",
+      "name": "Neurogaunts",
+      "min_cost": 45,
+      "max_cost": 90
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+  "intercessors": [
+    {
+      "Id": "000001606",
+      "name": "Assault Intercessor Squad",
+      "factionId": "SM",
+      "source_name": "Space Marines",
+      "edition": "11",
+      "virtual": "false",
+      "isSupport": "false",
+      "model_name": "Assault Intercessor Squad",
+      "t": "4",
+      "w": "2",
+      "link": "https://wahapedia.ru/wh40k11ed/factions/space-marines/Assault-Intercessor-Squad"
+    },
+    {
+      "Id": "000002776",
+      "name": "Assault Intercessors With Jump Packs",
+      "factionId": "SM",
+      "source_name": "Space Marines",
+      "edition": "11",
+      "virtual": "false",
+      "isSupport": "false",
+      "model_name": "Assault Intercessors With Jump Packs",
+      "t": "4",
+      "w": "2",
+      "link": "https://wahapedia.ru/wh40k11ed/factions/space-marines/Assault-Intercessors-With-Jump-Packs"
+    },
+    {
+      "Id": "000001177",
+      "name": "Heavy Intercessor Squad",
+      "factionId": "SM",
+      "source_name": "Space Marines",
+      "edition": "11",
+      "virtual": "false",
+      "isSupport": "false",
+      "model_name": "Heavy Intercessor Squad",
+      "t": "6",
+      "w": "3",
+      "link": "https://wahapedia.ru/wh40k11ed/factions/space-marines/Heavy-Intercessor-Squad"
+    },
+    {
+      "Id": "000001157",
+      "name": "Intercessor Squad",
+      "factionId": "SM",
+      "source_name": "Space Marines",
+      "edition": "11",
+      "virtual": "false",
+      "isSupport": "false",
+      "model_name": "Intercessor Squad",
+      "t": "4",
+      "w": "2",
+      "link": "https://wahapedia.ru/wh40k11ed/factions/space-marines/Intercessor-Squad"
+    }
+  ],
+  "space_marine_toughness": [
+    {
+      "Id": "000002099",
+      "name": "Aggressor Squad",
+      "model_name": "Aggressor Squad",
+      "t": "6",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000001606",
+      "name": "Assault Intercessor Squad",
+      "model_name": "Assault Intercessor Squad",
+      "t": "4",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000002776",
+      "name": "Assault Intercessors With Jump Packs",
+      "model_name": "Assault Intercessors With Jump Packs",
+      "t": "4",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000000103",
+      "name": "Eradicator Squad",
+      "model_name": "Eradicator Squad",
+      "t": "6",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000001177",
+      "name": "Heavy Intercessor Squad",
+      "model_name": "Heavy Intercessor Squad",
+      "t": "6",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000000125",
+      "name": "Inceptor Squad",
+      "model_name": "Inceptor Squad",
+      "t": "6",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000001157",
+      "name": "Intercessor Squad",
+      "model_name": "Intercessor Squad",
+      "t": "4",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000001160",
+      "name": "Scout Squad",
+      "model_name": "Scout Squad",
+      "t": "4",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000000070",
+      "name": "Tactical Squad",
+      "model_name": "Tactical Squad",
+      "t": "4",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000001183",
+      "name": "Terminator Squad",
+      "model_name": "Terminator Squad",
+      "t": "5",
+      "source_name": "Space Marines",
+      "edition": "11"
+    },
+    {
+      "Id": "000004138",
+      "name": "Terminator Squad",
+      "model_name": "Terminator Squad",
+      "t": "5",
+      "source_name": "Black Templars",
+      "edition": "11"
+    }
+  ],
+  "grenade": [
+    {
+      "FactionId": "",
+      "name": "GRENADE",
+      "id": "000008335006",
+      "type": "Core \u00e2\u0080\u0093 Wargear Stratagem",
+      "cpCost": "1",
+      "legend": "Priming their hand-held projectiles, these warriors draw back and hurl death into the enemy\u00e2\u0080\u0099s midst.",
+      "turn": "Your turn",
+      "phase": "Shooting phase",
+      "detachment": "",
+      "detachmentId": "",
+      "description": "WHEN: Your Shooting phase.TARGET: One GRENADES unit from your army (excluding units that Advanced, Fell Back or have shot this turn) that is not within Engagement Range of one or more enemy units.EFFECT: Select one GRENADES model in your unit and one enemy unit that is not within Engagement Range of any units from your army and is within 8\" of and visible to your GRENADES model. Roll six D6: for each 4+, that enemy unit suffers 1 mortal wound."
+    }
+  ],
+  "core_stratagem_names": [
+    {
+      "name": "EXPLOSIVE CLEARANCE",
+      "cpCost": "1",
+      "phase": "Shooting phase",
+      "turn": "Your turn",
+      "id": "000009218006"
+    },
+    {
+      "name": "INSANE BRAVERY",
+      "cpCost": "1",
+      "phase": "Command phase",
+      "turn": "Your turn",
+      "id": "000009218005"
+    },
+    {
+      "name": "COMMAND RE-ROLL",
+      "cpCost": "1",
+      "phase": "Any phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000009218002"
+    },
+    {
+      "name": "COUNTER-OFFENSIVE",
+      "cpCost": "2",
+      "phase": "Fight phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000009218004"
+    },
+    {
+      "name": "BATTLEFIELD COMMAND",
+      "cpCost": "1",
+      "phase": "Any phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000009218003"
+    },
+    {
+      "name": "RENEWED FOCUS",
+      "cpCost": "0",
+      "phase": "Shooting or Fight phase",
+      "turn": "Your turn",
+      "id": "000010252002"
+    },
+    {
+      "name": "OPPORTUNISTIC STRIKE",
+      "cpCost": "0",
+      "phase": "Shooting phase",
+      "turn": "Your turn",
+      "id": "000010248002"
+    },
+    {
+      "name": "FORCE A BREACH",
+      "cpCost": "0",
+      "phase": "Movement phase",
+      "turn": "Your turn",
+      "id": "000010249002"
+    },
+    {
+      "name": "GREAT HASTE",
+      "cpCost": "0",
+      "phase": "Movement phase",
+      "turn": "Your turn",
+      "id": "000010250002"
+    },
+    {
+      "name": "PIVOTAL MOMENT",
+      "cpCost": "0",
+      "phase": "Movement phase",
+      "turn": "Your turn",
+      "id": "000010251002"
+    },
+    {
+      "name": "STRATEGIC RETREAT",
+      "cpCost": "0",
+      "phase": "Shooting phase",
+      "turn": "Your turn",
+      "id": "000010255002"
+    },
+    {
+      "name": "ALL IN",
+      "cpCost": "0",
+      "phase": "Fight phase",
+      "turn": "Your turn",
+      "id": "000010254002"
+    },
+    {
+      "name": "BURST OF SPEED",
+      "cpCost": "0",
+      "phase": "Shooting phase",
+      "turn": "Your turn",
+      "id": "000010247002"
+    },
+    {
+      "name": "HARBOURED POWER",
+      "cpCost": "0",
+      "phase": "Shooting or Fight phase",
+      "turn": "Your turn",
+      "id": "000010253002"
+    },
+    {
+      "name": "GO TO GROUND",
+      "cpCost": "1",
+      "phase": "Shooting phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000008335010"
+    },
+    {
+      "name": "COMMAND RE-ROLL",
+      "cpCost": "1",
+      "phase": "Any phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000008335002"
+    },
+    {
+      "name": "EPIC CHALLENGE",
+      "cpCost": "1",
+      "phase": "Fight phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000008335004"
+    },
+    {
+      "name": "INSANE BRAVERY",
+      "cpCost": "1",
+      "phase": "Command phase",
+      "turn": "Your turn",
+      "id": "000008335005"
+    },
+    {
+      "name": "TANK SHOCK",
+      "cpCost": "1",
+      "phase": "Charge phase",
+      "turn": "Your turn",
+      "id": "000008335007"
+    },
+    {
+      "name": "RAPID INGRESS",
+      "cpCost": "1",
+      "phase": "Movement phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000008335008"
+    },
+    {
+      "name": "COUNTER-OFFENSIVE",
+      "cpCost": "2",
+      "phase": "Fight phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000008335003"
+    },
+    {
+      "name": "HEROIC INTERVENTION",
+      "cpCost": "1",
+      "phase": "Charge phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000008335012"
+    },
+    {
+      "name": "FIRE OVERWATCH",
+      "cpCost": "1",
+      "phase": "Movement or Charge phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000008335009"
+    },
+    {
+      "name": "SMOKESCREEN",
+      "cpCost": "1",
+      "phase": "Shooting phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000008335011"
+    },
+    {
+      "name": "GRENADE",
+      "cpCost": "1",
+      "phase": "Shooting phase",
+      "turn": "Your turn",
+      "id": "000008335006"
+    },
+    {
+      "name": "COUNTEROFFENSIVE",
+      "cpCost": "2",
+      "phase": "Fight phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000010810012"
+    },
+    {
+      "name": "HEROIC INTERVENTION",
+      "cpCost": "1",
+      "phase": "Charge phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000010810011"
+    },
+    {
+      "name": "SMOKESCREEN",
+      "cpCost": "1",
+      "phase": "Shooting phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000010810010"
+    },
+    {
+      "name": "FIRE OVERWATCH",
+      "cpCost": "1",
+      "phase": "Movement phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000010810008"
+    },
+    {
+      "name": "CRUSHING IMPACT",
+      "cpCost": "1",
+      "phase": "Charge phase",
+      "turn": "Your turn",
+      "id": "000010810006"
+    },
+    {
+      "name": "EXPLOSIVES",
+      "cpCost": "1",
+      "phase": "Shooting phase",
+      "turn": "Your turn",
+      "id": "000010810005"
+    },
+    {
+      "name": "INSANE BRAVERY",
+      "cpCost": "1",
+      "phase": "Command phase",
+      "turn": "Your turn",
+      "id": "000010810004"
+    },
+    {
+      "name": "EPIC CHALLENGE",
+      "cpCost": "1",
+      "phase": "Fight phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000010810003"
+    },
+    {
+      "name": "RAPID INGRESS",
+      "cpCost": "1",
+      "phase": "Movement phase",
+      "turn": "Opponent\u00e2\u0080\u0099s turn",
+      "id": "000010810007"
+    },
+    {
+      "name": "COMMAND RE-ROLL",
+      "cpCost": "1",
+      "phase": "Any phase",
+      "turn": "Either player\u00e2\u0080\u0099s turn",
+      "id": "000010810002"
+    },
+    {
+      "name": "NEW ORDERS",
+      "cpCost": "1",
+      "phase": "Command phase",
+      "turn": "Your turn",
+      "id": "000008539002"
+    },
+    {
+      "name": "NEW ORDERS",
+      "cpCost": "1",
+      "phase": "Command phase",
+      "turn": "Your turn",
+      "id": "000010245002"
+    },
+    {
+      "name": "NEW ORDERS",
+      "cpCost": "1",
+      "phase": "Command phase",
+      "turn": "Your turn",
+      "id": "000009063002"
+    },
+    {
+      "name": "NORMAL MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010849002"
+    },
+    {
+      "name": "FALL-BACK MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010850002"
+    },
+    {
+      "name": "ADVANCE MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010851002"
+    },
+    {
+      "name": "SCOUT MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010843002"
+    },
+    {
+      "name": "ASSAULT DISEMBARK MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000011123002"
+    },
+    {
+      "name": "REMAIN STATIONARY",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010848002"
+    },
+    {
+      "name": "SHOCK DISEMBARK MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000011124002"
+    },
+    {
+      "name": "ADVANCE MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010811004"
+    },
+    {
+      "name": "FALL-BACK MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010811005"
+    },
+    {
+      "name": "NORMAL MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010811003"
+    },
+    {
+      "name": "REMAIN STATIONARY",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010811002"
+    },
+    {
+      "name": "CHARGE MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010813002"
+    },
+    {
+      "name": "PILE-IN MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010814002"
+    },
+    {
+      "name": "CONSOLIDATION MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010817002"
+    },
+    {
+      "name": "DISEMBARK MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010818002"
+    },
+    {
+      "name": "EMERGENCY DISEMBARK MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010819002"
+    },
+    {
+      "name": "INGRESS MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010821002"
+    },
+    {
+      "name": "SURGE MOVE",
+      "cpCost": "",
+      "phase": "Ability \"Move\"",
+      "turn": "",
+      "id": "000010822002"
+    },
+    {
+      "name": "NORMAL SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010852002"
+    },
+    {
+      "name": "ASSAULT SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010853002"
+    },
+    {
+      "name": "NORMAL SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010812002"
+    },
+    {
+      "name": "OVERRUN FIGHT",
+      "cpCost": "",
+      "phase": "Ability \"Fight\"",
+      "turn": "",
+      "id": "000010816002"
+    },
+    {
+      "name": "ASSAULT SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010812003"
+    },
+    {
+      "name": "CLOSE-QUARTERS SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010854002"
+    },
+    {
+      "name": "INDIRECT SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010855002"
+    },
+    {
+      "name": "CLOSE\u00e2\u0080\u0091QUARTERS SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010812004"
+    },
+    {
+      "name": "INDIRECT SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010812005"
+    },
+    {
+      "name": "NORMAL FIGHT",
+      "cpCost": "",
+      "phase": "Ability \"Fight\"",
+      "turn": "",
+      "id": "000010815002"
+    },
+    {
+      "name": "SNAP SHOOTING",
+      "cpCost": "",
+      "phase": "Ability \"Shoot\"",
+      "turn": "",
+      "id": "000010810009"
+    }
+  ]
+}

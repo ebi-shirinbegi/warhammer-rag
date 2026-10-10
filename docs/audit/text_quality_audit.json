@@ -1,0 +1,191 @@
+{
+  "abilities": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 56,
+    "c1_control_rows": 56,
+    "storage_python_types": {
+      "str": 455
+    },
+    "html_examples": []
+  },
+  "datasheets": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 674,
+    "c1_control_rows": 671,
+    "storage_python_types": {
+      "str": 25200
+    },
+    "html_examples": []
+  },
+  "datasheets_abilities": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 1089,
+    "c1_control_rows": 1077,
+    "storage_python_types": {
+      "str": 55880
+    },
+    "html_examples": []
+  },
+  "datasheets_detachment_abilities": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 0,
+    "c1_control_rows": 0,
+    "storage_python_types": {
+      "str": 32514
+    },
+    "html_examples": []
+  },
+  "datasheets_enhancements": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 0,
+    "c1_control_rows": 0,
+    "storage_python_types": {
+      "str": 23180
+    },
+    "html_examples": []
+  },
+  "datasheets_keywords": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 117,
+    "c1_control_rows": 109,
+    "storage_python_types": {
+      "str": 65432
+    },
+    "html_examples": []
+  },
+  "datasheets_leader": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 0,
+    "c1_control_rows": 0,
+    "storage_python_types": {
+      "str": 3274
+    },
+    "html_examples": []
+  },
+  "datasheets_models": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 29,
+    "c1_control_rows": 24,
+    "storage_python_types": {
+      "str": 23192
+    },
+    "html_examples": []
+  },
+  "datasheets_models_cost": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 0,
+    "c1_control_rows": 0,
+    "storage_python_types": {
+      "str": 25104
+    },
+    "html_examples": []
+  },
+  "datasheets_options": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 2735,
+    "c1_control_rows": 2735,
+    "storage_python_types": {
+      "str": 11120
+    },
+    "html_examples": []
+  },
+  "datasheets_stratagems": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 0,
+    "c1_control_rows": 0,
+    "storage_python_types": {
+      "str": 173868
+    },
+    "html_examples": []
+  },
+  "datasheets_unit_composition": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 258,
+    "c1_control_rows": 255,
+    "storage_python_types": {
+      "str": 6393
+    },
+    "html_examples": []
+  },
+  "datasheets_wargear": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 1538,
+    "c1_control_rows": 1538,
+    "storage_python_types": {
+      "str": 117780
+    },
+    "html_examples": []
+  },
+  "detachment_abilities": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 186,
+    "c1_control_rows": 185,
+    "storage_python_types": {
+      "str": 2443
+    },
+    "html_examples": []
+  },
+  "detachments": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 136,
+    "c1_control_rows": 136,
+    "storage_python_types": {
+      "str": 2289
+    },
+    "html_examples": []
+  },
+  "detachments_chapter_dp": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 0,
+    "c1_control_rows": 0,
+    "storage_python_types": {
+      "str": 12
+    },
+    "html_examples": []
+  },
+  "enhancements": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 698,
+    "c1_control_rows": 694,
+    "storage_python_types": {
+      "str": 10280
+    },
+    "html_examples": []
+  },
+  "factions": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 2,
+    "c1_control_rows": 2,
+    "storage_python_types": {
+      "str": 75
+    },
+    "html_examples": []
+  },
+  "last_update": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 0,
+    "c1_control_rows": 0,
+    "storage_python_types": {
+      "str": 1
+    },
+    "html_examples": []
+  },
+  "source": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 4,
+    "c1_control_rows": 4,
+    "storage_python_types": {
+      "str": 462
+    },
+    "html_examples": []
+  },
+  "stratagems": {
+    "html_rows": 0,
+    "likely_mojibake_rows": 1591,
+    "c1_control_rows": 1591,
+    "storage_python_types": {
+      "str": 18293
+    },
+    "html_examples": []
+  }
+}

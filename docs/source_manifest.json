@@ -1,0 +1,23 @@
+{
+  "review_date": "2026-10-09",
+  "files": [
+    {
+      "original_path": "data/Core Rules.pdf",
+      "path": "data/raw/core_rules.pdf",
+      "bytes": 20700229,
+      "sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364"
+    },
+    {
+      "original_path": "data/wahadb.sqlite",
+      "path": "data/raw/wahadb.sqlite",
+      "bytes": 9699328,
+      "sha256": "364f412c3c1802d24ccc97eb74ffac78e6a5894a312b2fde685045945595fbc5"
+    },
+    {
+      "original_path": "data/SQL_AGENT_DATA_DICTIONARY.md",
+      "path": "docs/data_dictionary.md",
+      "bytes": 15934,
+      "sha256": "5a0e527b430ab5538d6ecad0aa05b515eca61214ad10705aae9e3b946c04be4a"
+    }
+  ]
+}

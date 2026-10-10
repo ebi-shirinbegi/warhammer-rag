@@ -1,0 +1,272 @@
+{
+  "datasheets.factionId -> factions.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "abilities.factionId -> factions.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "detachments.factionId -> factions.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "detachment_abilities.factionId -> factions.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "stratagems.factionId -> factions.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "enhancements.factionId -> factions.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_abilities.DatasheetId -> datasheets.Id": {
+    "rows": 1,
+    "keys": 1,
+    "values": [
+      {
+        "id": "000004150",
+        "n": 1
+      }
+    ]
+  },
+  "datasheets_keywords.DatasheetId -> datasheets.Id": {
+    "rows": 24,
+    "keys": 4,
+    "values": [
+      {
+        "id": "000004150",
+        "n": 7
+      },
+      {
+        "id": "000004151",
+        "n": 6
+      },
+      {
+        "id": "000004152",
+        "n": 5
+      },
+      {
+        "id": "000004153",
+        "n": 6
+      }
+    ]
+  },
+  "datasheets_models.DatasheetId -> datasheets.Id": {
+    "rows": 4,
+    "keys": 4,
+    "values": [
+      {
+        "id": "000004150",
+        "n": 1
+      },
+      {
+        "id": "000004151",
+        "n": 1
+      },
+      {
+        "id": "000004152",
+        "n": 1
+      },
+      {
+        "id": "000004153",
+        "n": 1
+      }
+    ]
+  },
+  "datasheets_models_cost.DatasheetId -> datasheets.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_options.DatasheetId -> datasheets.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_stratagems.DatasheetId -> datasheets.Id": {
+    "rows": 13,
+    "keys": 2,
+    "values": [
+      {
+        "id": "000004101",
+        "n": 10
+      },
+      {
+        "id": "000004150",
+        "n": 3
+      }
+    ]
+  },
+  "datasheets_unit_composition.DatasheetId -> datasheets.Id": {
+    "rows": 4,
+    "keys": 4,
+    "values": [
+      {
+        "id": "000004150",
+        "n": 1
+      },
+      {
+        "id": "000004151",
+        "n": 1
+      },
+      {
+        "id": "000004152",
+        "n": 1
+      },
+      {
+        "id": "000004153",
+        "n": 1
+      }
+    ]
+  },
+  "datasheets_wargear.DatasheetId -> datasheets.Id": {
+    "rows": 24,
+    "keys": 18,
+    "values": [
+      {
+        "id": "000000824",
+        "n": 1
+      },
+      {
+        "id": "000000825",
+        "n": 2
+      },
+      {
+        "id": "000000829",
+        "n": 1
+      },
+      {
+        "id": "000000830",
+        "n": 1
+      },
+      {
+        "id": "000000832",
+        "n": 1
+      },
+      {
+        "id": "000000833",
+        "n": 1
+      },
+      {
+        "id": "000001248",
+        "n": 3
+      },
+      {
+        "id": "000001249",
+        "n": 1
+      },
+      {
+        "id": "000001254",
+        "n": 1
+      },
+      {
+        "id": "000001258",
+        "n": 1
+      },
+      {
+        "id": "000001259",
+        "n": 2
+      },
+      {
+        "id": "000001593",
+        "n": 1
+      },
+      {
+        "id": "000001636",
+        "n": 1
+      },
+      {
+        "id": "000001638",
+        "n": 1
+      },
+      {
+        "id": "000004150",
+        "n": 3
+      },
+      {
+        "id": "000004151",
+        "n": 1
+      },
+      {
+        "id": "000004152",
+        "n": 1
+      },
+      {
+        "id": "000004153",
+        "n": 1
+      }
+    ]
+  },
+  "datasheets_enhancements.DatasheetId -> datasheets.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_detachment_abilities.DatasheetId -> datasheets.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_leader.LeaderId -> datasheets.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_leader.attachedId -> datasheets.Id": {
+    "rows": 1,
+    "keys": 1,
+    "values": [
+      {
+        "id": "000004101",
+        "n": 1
+      }
+    ]
+  },
+  "datasheets_abilities.abilityId -> abilities.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_detachment_abilities.detachmentAbilityId -> detachment_abilities.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_enhancements.enhancementId -> enhancements.id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets_stratagems.stratagemId -> stratagems.id": {
+    "rows": 9,
+    "keys": 1,
+    "values": [
+      {
+        "id": "000010677006",
+        "n": 9
+      }
+    ]
+  },
+  "detachment_abilities.detachmentId -> detachments.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "stratagems.detachmentId -> detachments.Id": {
+    "rows": 6,
+    "keys": 1,
+    "values": [
+      {
+        "id": "000000783",
+        "n": 6
+      }
+    ]
+  },
+  "enhancements.detachmentId -> detachments.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "detachments_chapter_dp.DetachmentId -> detachments.Id": {
+    "rows": 0,
+    "keys": 0
+  },
+  "datasheets.sourceId -> source.Id": {
+    "rows": 0,
+    "keys": 0
+  }
+}

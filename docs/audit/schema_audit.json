@@ -1,0 +1,1829 @@
+{
+  "abilities": {
+    "count": 91,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "Id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "legend",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "factionId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "Id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 71
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 68
+      },
+      "legend": {
+        "nulls": 0,
+        "blank": 17,
+        "distinct": 56
+      },
+      "factionId": {
+        "nulls": 0,
+        "blank": 13,
+        "distinct": 25
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 71
+      }
+    }
+  },
+  "datasheets": {
+    "count": 1680,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "Id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "factionId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "sourceId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "legend",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "role",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "loadout",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 7,
+        "name": "transport",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 8,
+        "name": "virtual",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 9,
+        "name": "isSupport",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 10,
+        "name": "leaderHead",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 11,
+        "name": "leaderFooter",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 12,
+        "name": "damagedW",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 13,
+        "name": "damagedDescription",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 14,
+        "name": "link",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "Id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1680
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1291
+      },
+      "factionId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 24
+      },
+      "sourceId": {
+        "nulls": 0,
+        "blank": 2,
+        "distinct": 61
+      },
+      "legend": {
+        "nulls": 0,
+        "blank": 468,
+        "distinct": 1180
+      },
+      "role": {
+        "nulls": 0,
+        "blank": 1680,
+        "distinct": 1
+      },
+      "loadout": {
+        "nulls": 0,
+        "blank": 7,
+        "distinct": 1184
+      },
+      "transport": {
+        "nulls": 0,
+        "blank": 1510,
+        "distinct": 137
+      },
+      "virtual": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 2
+      },
+      "isSupport": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 2
+      },
+      "leaderHead": {
+        "nulls": 0,
+        "blank": 1680,
+        "distinct": 1
+      },
+      "leaderFooter": {
+        "nulls": 0,
+        "blank": 1662,
+        "distinct": 13
+      },
+      "damagedW": {
+        "nulls": 0,
+        "blank": 1331,
+        "distinct": 15
+      },
+      "damagedDescription": {
+        "nulls": 0,
+        "blank": 1331,
+        "distinct": 41
+      },
+      "link": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1680
+      }
+    }
+  },
+  "datasheets_abilities": {
+    "count": 6985,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "line",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "abilityId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "model",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "type",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 7,
+        "name": "parameter",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1680
+      },
+      "line": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 11
+      },
+      "abilityId": {
+        "nulls": 0,
+        "blank": 3504,
+        "distinct": 50
+      },
+      "model": {
+        "nulls": 0,
+        "blank": 6985,
+        "distinct": 1
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 3476,
+        "distinct": 2038
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 3481,
+        "distinct": 2010
+      },
+      "type": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 9
+      },
+      "parameter": {
+        "nulls": 0,
+        "blank": 5998,
+        "distinct": 27
+      }
+    }
+  },
+  "datasheets_detachment_abilities": {
+    "count": 16257,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "detachmentAbilityId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1667
+      },
+      "detachmentAbilityId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 339
+      }
+    }
+  },
+  "datasheets_enhancements": {
+    "count": 11590,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "enhancementId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 706
+      },
+      "enhancementId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1028
+      }
+    }
+  },
+  "datasheets_keywords": {
+    "count": 16358,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "keyword",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "model",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "isFactionKeyword",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1684
+      },
+      "keyword": {
+        "nulls": 0,
+        "blank": 315,
+        "distinct": 1396
+      },
+      "model": {
+        "nulls": 0,
+        "blank": 15820,
+        "distinct": 45
+      },
+      "isFactionKeyword": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 2
+      }
+    }
+  },
+  "datasheets_leader": {
+    "count": 1637,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "LeaderId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "attachedId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "LeaderId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 409
+      },
+      "attachedId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 304
+      }
+    }
+  },
+  "datasheets_models": {
+    "count": 1784,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "line",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "m",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "t",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "sv",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "invSv",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 7,
+        "name": "invSvDescr",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 8,
+        "name": "w",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 9,
+        "name": "ld",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 10,
+        "name": "oc",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 11,
+        "name": "baseSize",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 12,
+        "name": "baseSizeDescr",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1683
+      },
+      "line": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 4
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 25,
+        "distinct": 1315
+      },
+      "m": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 16
+      },
+      "t": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 16
+      },
+      "sv": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 6
+      },
+      "invSv": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 7
+      },
+      "invSvDescr": {
+        "nulls": 0,
+        "blank": 1715,
+        "distinct": 19
+      },
+      "w": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 29
+      },
+      "ld": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 4
+      },
+      "oc": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 14
+      },
+      "baseSize": {
+        "nulls": 0,
+        "blank": 10,
+        "distinct": 29
+      },
+      "baseSizeDescr": {
+        "nulls": 0,
+        "blank": 1756,
+        "distinct": 18
+      }
+    }
+  },
+  "datasheets_models_cost": {
+    "count": 6276,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "line",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "cost",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1678
+      },
+      "line": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 42
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 82
+      },
+      "cost": {
+        "nulls": 0,
+        "blank": 2813,
+        "distinct": 130
+      }
+    }
+  },
+  "datasheets_options": {
+    "count": 2780,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "line",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "button",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1293
+      },
+      "line": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 11
+      },
+      "button": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 2
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1350
+      }
+    }
+  },
+  "datasheets_stratagems": {
+    "count": 86934,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "stratagemId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1681
+      },
+      "stratagemId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1603
+      }
+    }
+  },
+  "datasheets_unit_composition": {
+    "count": 2131,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "line",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1683
+      },
+      "line": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 7
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1571
+      }
+    }
+  },
+  "datasheets_wargear": {
+    "count": 9060,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DatasheetId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "line",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "lineInWargear",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "dice",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "range",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 7,
+        "name": "type",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 8,
+        "name": "a",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 9,
+        "name": "bsWs",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 10,
+        "name": "s",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 11,
+        "name": "ap",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 12,
+        "name": "d",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DatasheetId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1698
+      },
+      "line": {
+        "nulls": 0,
+        "blank": 2034,
+        "distinct": 31
+      },
+      "lineInWargear": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 3
+      },
+      "dice": {
+        "nulls": 0,
+        "blank": 9057,
+        "distinct": 4
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 44,
+        "distinct": 2379
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 2698,
+        "distinct": 524
+      },
+      "range": {
+        "nulls": 0,
+        "blank": 44,
+        "distinct": 25
+      },
+      "type": {
+        "nulls": 0,
+        "blank": 44,
+        "distinct": 3
+      },
+      "a": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 38
+      },
+      "bsWs": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 8
+      },
+      "s": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 23
+      },
+      "ap": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 9
+      },
+      "d": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 29
+      }
+    }
+  },
+  "detachment_abilities": {
+    "count": 349,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "Id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "factionId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "legend",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "detachment",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "detachmentId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "Id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 349
+      },
+      "factionId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 23
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 340
+      },
+      "legend": {
+        "nulls": 0,
+        "blank": 8,
+        "distinct": 337
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 345
+      },
+      "detachment": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 325
+      },
+      "detachmentId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 327
+      }
+    }
+  },
+  "detachments": {
+    "count": 327,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "Id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "factionId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "legend",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "type",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "dp",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "forceDisposition",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "Id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 327
+      },
+      "factionId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 23
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 325
+      },
+      "legend": {
+        "nulls": 0,
+        "blank": 74,
+        "distinct": 251
+      },
+      "type": {
+        "nulls": 0,
+        "blank": 268,
+        "distinct": 2
+      },
+      "dp": {
+        "nulls": 0,
+        "blank": 59,
+        "distinct": 4
+      },
+      "forceDisposition": {
+        "nulls": 0,
+        "blank": 59,
+        "distinct": 6
+      }
+    }
+  },
+  "detachments_chapter_dp": {
+    "count": 4,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "DetachmentId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "keyword",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "dp",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "DetachmentId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 2
+      },
+      "keyword": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 3
+      },
+      "dp": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 2
+      }
+    }
+  },
+  "enhancements": {
+    "count": 1028,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "FactionId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "cost",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "detachment",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "detachmentId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "upgrade",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 7,
+        "name": "legend",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 8,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 9,
+        "name": "supportLeader",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "FactionId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 23
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1007
+      },
+      "id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1028
+      },
+      "cost": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 10
+      },
+      "detachment": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 324
+      },
+      "detachmentId": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 326
+      },
+      "upgrade": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 2
+      },
+      "legend": {
+        "nulls": 0,
+        "blank": 1,
+        "distinct": 1017
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 1,
+        "distinct": 1009
+      },
+      "supportLeader": {
+        "nulls": 0,
+        "blank": 1015,
+        "distinct": 12
+      }
+    }
+  },
+  "factions": {
+    "count": 25,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "Id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "link",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "Id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 25
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 25
+      },
+      "link": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 25
+      }
+    }
+  },
+  "last_update": {
+    "count": 1,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "LastUpdate",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "LastUpdate": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1
+      }
+    }
+  },
+  "source": {
+    "count": 66,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "Id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "type",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "edition",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "version",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "errataDate",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "errataLink",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "Id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 66
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 66
+      },
+      "type": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 5
+      },
+      "edition": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 3
+      },
+      "version": {
+        "nulls": 0,
+        "blank": 34,
+        "distinct": 6
+      },
+      "errataDate": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 12
+      },
+      "errataLink": {
+        "nulls": 0,
+        "blank": 32,
+        "distinct": 35
+      }
+    }
+  },
+  "stratagems": {
+    "count": 1663,
+    "columns": [
+      {
+        "cid": 0,
+        "name": "FactionId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 1,
+        "name": "name",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 2,
+        "name": "id",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 3,
+        "name": "type",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 4,
+        "name": "cpCost",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 5,
+        "name": "legend",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 6,
+        "name": "turn",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 7,
+        "name": "phase",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 8,
+        "name": "detachment",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 9,
+        "name": "detachmentId",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      },
+      {
+        "cid": 10,
+        "name": "description",
+        "type": "TEXT",
+        "notnull": 0,
+        "dflt_value": null,
+        "pk": 0
+      }
+    ],
+    "indexes": [],
+    "foreign_keys": [],
+    "null_blank": {
+      "FactionId": {
+        "nulls": 0,
+        "blank": 67,
+        "distinct": 24
+      },
+      "name": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1572
+      },
+      "id": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1663
+      },
+      "type": {
+        "nulls": 0,
+        "blank": 6,
+        "distinct": 664
+      },
+      "cpCost": {
+        "nulls": 0,
+        "blank": 35,
+        "distinct": 4
+      },
+      "legend": {
+        "nulls": 0,
+        "blank": 35,
+        "distinct": 1572
+      },
+      "turn": {
+        "nulls": 0,
+        "blank": 35,
+        "distinct": 4
+      },
+      "phase": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 14
+      },
+      "detachment": {
+        "nulls": 0,
+        "blank": 67,
+        "distinct": 324
+      },
+      "detachmentId": {
+        "nulls": 0,
+        "blank": 67,
+        "distinct": 326
+      },
+      "description": {
+        "nulls": 0,
+        "blank": 0,
+        "distinct": 1611
+      }
+    }
+  }
+}
