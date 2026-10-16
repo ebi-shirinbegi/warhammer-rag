@@ -33,3 +33,10 @@ tmp/
 
 # Local assignment and lecture reference material.
 /course/
+
+# Browser verification artifacts.
+output/playwright/
+.playwright-cli/
+
+# Private local conversations.
+/data/local/

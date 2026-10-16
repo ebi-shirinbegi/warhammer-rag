@@ -7,10 +7,13 @@ both sources, and conversational follow-ups through Google AI Studio.
 
 ## Status
 
-Implemented: typed configuration, offline diagnostics, protected SQLite access,
-unit tests and development tooling. The earlier Docling parser is retained as an
-experimental baseline. Production parsing, indexing, retrieval, conversation and
-end-to-end evaluation remain under development.
+Implemented: typed configuration, offline diagnostics, a Gemini connection check,
+protected SQLite access and a reproducible 60-page rulebook parse with page citations,
+reviewed graphical tables and complete stratagem records. Tests and development
+tooling run offline. Rulebook chunking, lexical retrieval and parameterized SQLite
+unit lookups are implemented. A themed local browser chat supports Gemini answers, source routing, citations
+and conversational follow-ups. End-to-end answer evaluation remains under development. The earlier Docling parser is retained
+as an experiment.
 
 ## Setup
 
@@ -56,6 +59,69 @@ in configuration representations.
 `doctor --require-api-key` additionally requires a nonempty key; it does not
 validate credentials remotely. Offline development does not require a key.
 
+To validate the configured model with one small API request:
+
+```sh
+./scripts/uv run --locked warhammer-rag check-api
+```
+
+This command uses the API quota of the Google AI Studio project associated with
+the key. It does not change billing settings.
+
+## Rulebook parsing
+
+```sh
+./scripts/uv run --locked warhammer-rag parse
+```
+
+The parser writes [readable Markdown](data/processed/core_rules.md),
+[structured records](data/processed/core_rules.json) and a
+[coverage report](data/processed/parse_report.json). It runs locally without an API
+key and checks the source hash before applying the supplied edition's layout profile.
+`--output-dir PATH` overrides the destination.
+
+All 60 pages are accounted for, including three decorative pages. All 11 stratagems
+retain their costs and conditions. Graphical dice values use reviewed transcriptions;
+spatial illustrations remain linked to the PDF rather than fully encoded as text.
+See [ingestion details](docs/ingestion.md) for verification and limitations.
+
+## Chat
+
+```sh
+./scripts/uv run --locked warhammer-rag chat
+```
+
+The command opens **http://127.0.0.1:8000** in your default browser and reuses
+an already-running instance from this checkout. Use `--no-browser` to suppress
+automatic opening. Configure `.env` and run `warhammer-rag index`
+first. Imperial Archive includes source citations, unit clarification, follow-ups and a
+History panel. Conversations save locally across refreshes and restarts; saved
+records and drafts are excluded from Git. `--port 8001` changes the port. Exact unit-stat questions use SQLite directly. Explicit first-turn lookups use one Gemini answer stage; ambiguous queries and
+follow-ups may also need a planning stage, with bounded retries for temporary service errors; the API key stays on the Python server.
+See [chat design and limitations](docs/chat.md).
+
+## Evidence retrieval
+
+```sh
+./scripts/uv run --locked warhammer-rag index
+./scripts/uv run --locked warhammer-rag search "How do I use grenades?"
+./scripts/uv run --locked warhammer-rag units "Intercessor"
+./scripts/uv run --locked warhammer-rag unit 000001157
+./scripts/uv run --locked warhammer-rag search "grenades" --unit "Intercessor Squad"
+./scripts/uv run --locked warhammer-rag evaluate-retrieval
+```
+
+The index command produces versioned `data/processed/chunks.json` and a rebuildable
+SQLite FTS5 index under `data/indexes/`. Search returns JSON evidence with source
+identities, pages and ranking scores. These commands run offline without API usage.
+An exact, unique unit name resolves to its datasheet; partial or ambiguous names
+return candidates. Models, abilities, keywords and cost configurations retain
+their stored values and provenance.
+
+These commands return raw evidence. Use `chat` for conversational answers.
+Arbitrary question-to-SQL generation is not implemented. See
+[retrieval design and baseline results](docs/retrieval.md).
+
 ## Development
 
 ```sh
@@ -87,7 +153,7 @@ scripts/                     Setup and development commands
 
 The source corpus is unchanged; hashes and original filenames are recorded in
 [the source manifest](docs/source_manifest.json). Course materials remain local and are excluded from Git. Parsed rulebook artifacts belong in version control;
-the complete production parse is still pending.
+the current Markdown and JSON artifacts are included under `data/processed/`.
 
 ## Documentation
 

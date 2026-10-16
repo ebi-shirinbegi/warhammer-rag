@@ -1,0 +1,21 @@
+{
+  "source_sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364",
+  "page_count": 60,
+  "block_count": 991,
+  "stratagem_count": 11,
+  "reviewed_table_pages": [
+    9,
+    21,
+    59
+  ],
+  "empty_native_text_pages": [
+    2,
+    31,
+    40
+  ],
+  "limitations": [
+    "Spatial illustrations and photographs are linked, not fully interpreted.",
+    "Page 37 is an illustrative datasheet, not a live unit profile.",
+    "Paragraphs and repeated summaries are retained; retrieval chunking is separate."
+  ]
+}

@@ -11,6 +11,9 @@ from pathlib import Path
 
 
 def _authorize(action: int, arg1: str | None, arg2: str | None, *_: object) -> int:
+    # FTS5 reads this counter when opening its index; it cannot mutate database state.
+    if action == sqlite3.SQLITE_PRAGMA and arg1 == "data_version" and arg2 is None:
+        return sqlite3.SQLITE_OK
     # Read-only URI protects the main DB. These deny creation of attached DBs,
     # changing query_only, and invoking SQLite's extension-loading function.
     if action in (sqlite3.SQLITE_ATTACH, sqlite3.SQLITE_DETACH, sqlite3.SQLITE_PRAGMA):

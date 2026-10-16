@@ -4,6 +4,44 @@ The supplied rulebook has 60 pages containing native text, multiple columns,
 sidebars, graphical tables, diagrams and repeated summaries. Plain text extraction
 alone loses rule-bearing information.
 
+## Extraction method
+
+`warhammer-rag parse` uses PyMuPDF native text blocks in PDF content-stream order.
+This preserves the source's columns more reliably than a global vertical sort.
+The layout profile is restricted to the supplied file's SHA-256 digest; a different
+edition fails before any output is written.
+
+Page 4's thumbnail text, margin navigation and running footers are excluded with
+their bounding boxes and reasons recorded in JSON. Wrapped bullet continuations
+are reconnected. The page 21 title is moved ahead of its attack sequence.
+Stratagem regions on pages 41–42 become atomic records containing the name, cost,
+category, timing, target, effect and restrictions where present.
+
+Reviewed transcriptions supply the graphical D3 and wound tables on pages 9 and
+21, and preserve battlefield-size cell associations on page 59. CP costs and the
+page 60 deployment-map note also carry explicit transcription provenance.
+These values come from the supplied PDF, including its older 2CP Heroic Intervention.
+
+The JSON contains stable block IDs, section page ranges and page links. Cross-page
+rules remain in their shared section; chunking must preserve continuation context.
+Page 37 records are marked `example_only`. Captions and source links preserve access
+to battlefield photographs and other illustrations, but the parse does not fully
+encode their spatial relationships. Summaries are retained alongside full rules.
+
+The initial PyMuPDF4LLM trial omitted rule text with default settings and mixed
+stratagem headings with unrelated card text when graphics were ignored. It is not
+a runtime dependency. The earlier Docling implementation remains an experimental
+baseline rather than the production extraction path.
+
+## Automated checks
+
+Offline tests verify all 60 page records, unique block identifiers, preservation
+of every native-text word unless explicitly excluded, all 11 stratagems and key
+restrictions, graphical table values, Only War scoring and step order, example
+datasheet labels, source-digest rejection and reproducible output. These checks
+complement visual review of the difficult pages; word retention alone does not
+prove correct reading order or graphical interpretation.
+
 ## Verification cases
 
 | Pages | Risk | Required handling |

@@ -2,9 +2,12 @@
 
 ## Implementation status
 
-Configuration, offline diagnostics and read-only SQLite access are implemented.
+Configuration, offline diagnostics, a Gemini connection check, read-only SQLite
+access and the supplied rulebook's page-addressable parse are implemented.
 An experimental Docling parser is retained under `experiments/docling/`.
-Production ingestion, retrieval, conversation and evaluation remain under development.
+Chunking, FTS5/BM25 retrieval, parameterized unit lookups and an offline retrieval
+evaluation command are implemented. Gemini source routing and multi-turn conversation are available through the local
+browser interface. Generated SQL and end-to-end answer evaluation remain under development.
 
 ## Target data flow
 
@@ -49,10 +52,10 @@ unit tests, and pre-commit checks changed Python files. Pydantic Settings reads
 configuration. The Google Gen AI SDK supplies the backend integration; Rich and
 prompt_toolkit are available for the terminal interface.
 
-The production parser, embedding model, vector store, orchestration framework
-and evaluation library remain open decisions. Parser selection depends on the
-quality criteria in [ingestion.md](ingestion.md), including graphical tables and
-reading order. Advanced retrieval changes require comparison against a baseline.
+The parser uses PyMuPDF's native text blocks with a digest-guarded layout profile
+for graphical tables and stratagem cards. See [ingestion.md](ingestion.md).
+The embedding model, vector store, orchestration framework and evaluation library
+remain open decisions. Advanced retrieval changes require comparison against a baseline.
 
 ## Data lifecycle
 
@@ -70,7 +73,8 @@ validated normalization limited to derived search/display fields.
 ## SQL access and source grounding
 
 The connection utility uses SQLite URI `mode=ro`, `query_only`, and an authorizer
-that denies ATTACH, DETACH and PRAGMA statements. Connections close on exit.
+that denies ATTACH, DETACH and PRAGMA statements except the read-only
+`data_version` counter required by FTS5. Connections close on exit.
 This utility is not a complete execution boundary for arbitrary generated SQL.
 The future SQL tool additionally requires statement validation, row limits,
 execution budgets and bounded error recovery.

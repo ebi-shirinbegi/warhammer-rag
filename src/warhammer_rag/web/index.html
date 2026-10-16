@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Imperial Archive · Warhammer Archive</title><link rel="icon" href="/crest.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<button id="sidebar-backdrop" hidden tabindex="-1" aria-label="Close conversations"></button>
+<aside id="history-panel" aria-label="Saved conversations">
+<div class="history-brand"><button class="home-link" aria-label="Imperial Archive home"><img src="/crest.svg" alt=""><span>IMPERIAL<br>ARCHIVE</span></button><button id="history-close" class="quiet" aria-label="Collapse sidebar">◧</button></div>
+<button id="sidebar-new" class="new-chat">＋ New consultation</button>
+<div class="history-header"><h2>Conversations</h2></div><div id="history-list"></div><p class="history-note">Saved on this computer</p>
+</aside>
+<div class="shell">
+<header><button class="home-link header-home" aria-label="Imperial Archive home"><span><span class="eyebrow">WARHAMMER 40,000 / FIELD ARCHIVE</span><h1>IMPERIAL <span>ARCHIVE</span></h1></span></button><div class="connection"><i id="signal"></i><span id="connection">Connecting to archive</span></div></header>
+<div class="workspace">
+<main>
+<div class="session-bar"><span><span class="small-cross">✧</span> TACTICAL CONSULTATION</span><div class="session-actions"><button id="history-toggle" class="quiet" type="button" aria-controls="history-panel" aria-expanded="true">☰ History</button><button id="reset" class="quiet">＋ New consultation</button></div></div>
+<div id="conversation" role="log" aria-label="Conversation" aria-live="polite">
+<section id="welcome">
+<div class="seal" aria-hidden="true"><img src="/crest.svg" alt=""></div>
+<p class="eyebrow">KNOWLEDGE IS A WEAPON</p>
+<h2>Consult the archive.<br><em>Command with certainty.</em></h2>
+<p class="intro">Explore the rules of battle, inspect your forces and trace every ruling back to its source.</p>
+<div class="suggestions">
+<button data-question="Can an Intercessor Squad use grenades? What are the restrictions?"><span class="card-number">I</span><span><strong>Rules of engagement</strong><small>Can my Intercessors use grenades?</small></span><b>↗</b></button>
+<button data-question="What is the Toughness of an Intercessor Squad?"><span class="card-number">II</span><span><strong>Know your forces</strong><small>Inspect an Intercessor's Toughness</small></span><b>↗</b></button>
+<button data-question="How does scoring work in the Only War mission?"><span class="card-number">III</span><span><strong>Secure victory</strong><small>Understand Only War scoring</small></span><b>↗</b></button>
+</div>
+</section>
+</div>
+<div class="composer-wrap"><div id="error" role="alert" hidden></div><div id="working" role="status" hidden><span class="pulse">✦</span> Consulting the archive…</div><form id="chat-form"><label class="sr-only" for="question">Your question</label><textarea id="question" rows="2" maxlength="2000" placeholder="Ask about a rule, a unit, or your next move…" required></textarea><button id="send" type="submit" aria-label="Send question">↑</button></form><div class="composer-footer"><span>Enter to send <span class="dim">· Shift + Enter for a new line</span></span><span>GROUNDED IN THE SUPPLIED SOURCES</span></div></div>
+</main>
+<aside class="evidence"><div class="evidence-heading"><span class="eyebrow">THE RECORD</span><h2>Source archive <span id="source-count">00</span></h2></div><div id="sources"><div class="empty-evidence"><span aria-hidden="true">⌑</span><h3>Every ruling has a record.</h3><p>References from the Core Rules and unit datasheets will appear here with each answer.</p></div></div><div class="archive-footer"><span class="eyebrow">AVAILABLE COLLECTIONS</span><div><span>01 / Core Rules</span><span>60 pages</span></div><div><span>02 / Unit datasheets</span><span>SQLite</span></div><p>Answers reflect the supplied project corpus. Check the cited version when rules differ.</p></div></aside>
+</div>
+<footer><span>IMPERIAL ARCHIVE</span><span>Warhammer 40,000 - Class Project by Mohammad Ebrahim SHARIFI and Muhammad Ibrar Ul HASSAN</span><span>FOR THE PURSUIT OF KNOWLEDGE</span></footer>
+</div>
+</body></html>

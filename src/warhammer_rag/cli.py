@@ -1,8 +1,10 @@
 """Offline configuration and source-data diagnostics."""
 
 import argparse
+import json
 import sqlite3
 from collections.abc import Sequence
+from pathlib import Path
 
 from pydantic import ValidationError
 
@@ -49,10 +51,105 @@ def main(argv: Sequence[str] | None = None) -> int:
     check.add_argument(
         "--require-api-key", action="store_true", help="Fail if GOOGLE_API_KEY is missing"
     )
+    parse = commands.add_parser("parse", help="Parse the supplied Core Rules PDF offline")
+    parse.add_argument("--output-dir", type=Path, help="Override the parsed artifact directory")
+    commands.add_parser("check-api", help="Make one small Gemini request to test API access")
+    commands.add_parser("index", help="Build rulebook chunks and the offline search index")
+    commands.add_parser("evaluate-retrieval", help="Run the offline retrieval development cases")
+    search = commands.add_parser("search", help="Retrieve rulebook and optional unit evidence")
+    search.add_argument("query")
+    search.add_argument("--unit", help="Unit name to look up in SQLite")
+    search.add_argument("--limit", type=int, default=5)
+    units = commands.add_parser("units", help="Find unit names and exact datasheet IDs")
+    units.add_argument("name")
+    unit = commands.add_parser("unit", help="Retrieve a datasheet by its exact ID")
+    unit.add_argument("id")
+    chat = commands.add_parser("chat", help="Open the local Warhammer chat server")
+    chat.add_argument("--port", type=int, default=8000)
+    chat.add_argument("--no-browser", action="store_true", help="Do not open the default browser")
     args = parser.parse_args(argv)
     try:
         settings = Settings()
     except ValidationError:
         # Do not print validation details, which may contain raw environment values.
         parser.exit(2, "Invalid configuration. Check the paths and values in .env.\n")
+    if args.command == "chat":
+        from warhammer_rag.web.server import serve
+
+        return serve(settings, args.port, launch_browser=not args.no_browser)
+    if args.command in {"index", "search", "units", "unit", "evaluate-retrieval"}:
+        from warhammer_rag.ingestion.chunks import build_chunks
+        from warhammer_rag.retrieval.datasheets import find_units, retrieve_unit, unit_details
+        from warhammer_rag.retrieval.text import build_index, search_rules
+
+        try:
+            index_path = settings.index_dir / "rules.sqlite"
+            if args.command == "evaluate-retrieval":
+                from warhammer_rag.evaluation.retrieval import evaluate_retrieval
+
+                result = evaluate_retrieval(index_path, settings.eval_dir / "retrieval.json")
+                settings.report_dir.mkdir(parents=True, exist_ok=True)
+                (settings.report_dir / "retrieval.json").write_text(
+                    json.dumps(result, indent=2) + "\n", encoding="utf-8"
+                )
+                print(json.dumps(result, indent=2))
+                return int(result["hit_rate"] < 1)
+            if args.command == "index":
+                chunks_path = settings.processed_dir / "chunks.json"
+                build_chunks(settings.processed_dir / "core_rules.json", chunks_path)
+                count = build_index(chunks_path, index_path)
+                print(f"Indexed {count} chunks: {index_path}")
+                return 0
+            if args.command == "search":
+                result = {
+                    "rules": search_rules(
+                        index_path,
+                        args.query,
+                        args.limit,
+                        chunks_path=settings.processed_dir / "chunks.json",
+                    )
+                }
+                if args.unit:
+                    result["datasheet"] = retrieve_unit(settings.database_path, args.unit)
+            elif args.command == "units":
+                result = find_units(settings.database_path, args.name)
+            else:
+                result = unit_details(settings.database_path, args.id)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0
+        except (OSError, ValueError, sqlite3.Error) as exc:
+            print(f"ERROR {exc}")
+            return 1
+    if args.command == "check-api":
+        from google.genai.errors import APIError
+
+        from warhammer_rag.chat.gemini import check_connection
+
+        try:
+            success = check_connection(settings)
+        except ValueError:
+            print("ERROR configure GOOGLE_API_KEY and GOOGLE_MODEL in .env.")
+            return 1
+        except APIError as exc:
+            print(f"ERROR Gemini request failed (HTTP {exc.code}).")
+            return 1
+        except Exception:
+            # Transport exceptions may include request URLs; never print their payloads.
+            print("ERROR Gemini connection failed. Check network access and configuration.")
+            return 1
+        print("OK Gemini connection" if success else "ERROR unexpected or empty Gemini response")
+        return int(not success)
+    if args.command == "parse":
+        from warhammer_rag.ingestion.rulebook import parse_rulebook
+
+        try:
+            report = parse_rulebook(
+                settings.rulebook_path, args.output_dir or settings.processed_dir
+            )
+        except (OSError, ValueError) as exc:
+            print(f"ERROR {exc}")
+            return 1
+        print(f"Parsed {report['page_count']} pages, {report['stratagem_count']} stratagems.")
+        print(f"Output: {args.output_dir or settings.processed_dir}")
+        return 0
     return doctor(settings, require_api_key=args.require_api_key)

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "grenades",
+    "query": "How do I use grenades?",
+    "page": 42,
+    "contains": "Roll six D6"
+  },
+  {
+    "id": "overwatch",
+    "query": "When can I use Fire Overwatch?",
+    "page": 42,
+    "contains": "once per turn"
+  },
+  {
+    "id": "wound",
+    "query": "What roll do I need to wound?",
+    "page": 21,
+    "contains": "S ≥ 2T"
+  },
+  {
+    "id": "scoring",
+    "query": "How does scoring work?",
+    "page": 59,
+    "contains": "maximum of 3VP per turn"
+  },
+  {
+    "id": "charge",
+    "query": "Can I charge after advancing?",
+    "page": 29,
+    "contains": "Advanced or Fell Back"
+  },
+  {
+    "id": "coherency",
+    "query": "What is unit coherency?",
+    "page": 6,
+    "contains": "of at least two other models"
+  },
+  {
+    "id": "shock",
+    "query": "What happens during Battle-shock?",
+    "page": 11,
+    "contains": "Objective Control"
+  },
+  {
+    "id": "objective",
+    "query": "How do I control objective markers?",
+    "page": 58,
+    "contains": "Level of Control"
+  },
+  {
+    "id": "rapid",
+    "query": "What are the restrictions on Rapid Ingress?",
+    "page": 42,
+    "contains": "would not normally be able to"
+  },
+  {
+    "id": "heroic",
+    "query": "How much CP is Heroic Intervention?",
+    "page": 42,
+    "contains": "2CP"
+  }
+]
