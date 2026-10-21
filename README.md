@@ -166,3 +166,11 @@ the current Markdown and JSON artifacts are included under `data/processed/`.
 
 Tool references: [uv](https://docs.astral.sh/uv/getting-started/installation/) and
 [Google Gen AI SDK](https://googleapis.github.io/python-genai/).
+
+## Text benchmark evaluation
+
+See [the evaluation workflow](docs/evaluation.md) for generated benchmark review,
+resumable answer scoring and limitations. `make generate-eval` generates draft
+questions through Gemini; `make evaluate` evaluates a reviewed dataset.
+`make evaluate-retrieval` runs the existing offline retrieval checks.
+`make chat` starts the interface and `make check` runs the offline checks.

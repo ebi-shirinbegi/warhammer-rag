@@ -24,12 +24,12 @@ Page references use the supplied PDFs' 1-based page numbers.
 | Parsed rulebook delivered with repository URL | Lab 2 p2 | Versioned parse artifact and accessible repository |
 | Credentials excluded from Git | Lab 2 p5 | Local `.env` and tracked configuration template |
 
-Source references: Lab 1, Lab 2 and Session 1. Assignment and lecture documents
+Source references: Lab 1, Lab 2, Lab 3 and Session 1. Assignment and lecture documents
 are local reference material and are not distributed with the repository.
 
 ## Submission and assessment
 
-- Deadline stated in Lab 2 p2: **November 2nd, 00:00**. Year and timezone are not
+- Deadline stated in Lab 2 p2 and repeated in Lab 3 p2: **November 2nd, 00:00**. Year and timezone are not
   specified. This denotes the start of November 2.
 - Submission: repository URL and parsed rulebook; the latter may be included in
   the repository.
@@ -53,6 +53,47 @@ as an example. Session 2 pp35–40 recommends a larger starting set for broader
 coverage. Generated reference answers require review; comparisons use a frozen,
 versioned dataset. Evaluation separates retrieval quality, grounding, correctness,
 latency and resource use.
+
+## Lab 3 clarification (reviewed October 16, 2026)
+
+The supplied `project instructions.pdf` is byte-for-byte identical to Lab 1;
+it introduces no changed requirements. Lab 3 repeats the existing deadline and
+submission artifacts. Page 3 explicitly labels the implementation examples as
+suggestions and focuses this lab on text-based evaluation, excluding T2SQL
+testing from that exercise. This does not remove SQLite from the project scope.
+
+The complete `Mini-Project-20261016` package was also checked. Its Lab 2, Lab 3
+and project instructions PDFs are byte-for-byte identical to the reviewed copies.
+Its `Input data.zip` contains only the Core Rules PDF, `wahadb.sqlite` and the SQL
+data dictionary; all three match the existing project files byte-for-byte.
+This package introduces no additional instructions or changed input data.
+
+Lab 3 provides the following evaluation workflow:
+
+- Generate and save a dataset containing summary, single-hop and multi-hop
+  questions using RAGAS and parsed sections represented as LangChain documents
+  (p5).
+- Run questions through the application and persist reference answers, generated
+  responses and contexts actually used by the agent, with resumable checkpoints
+  (pp6–7). Retrieval skipped by the router must count against the evaluation;
+  separately retrieved ideal contexts must not replace the agent's contexts.
+- Measure faithfulness, factual correctness, context precision with reference
+  and context recall; export per-question scores and responses (p7).
+- Keep evaluation dependencies in a separate `eval` group; RAGAS and RapidFuzz
+  are the example packages (p4). Gemini and embedding adapters are shown on p9.
+- Use a shared request-rate limiter for Gemini calls, including evaluation calls
+  (p13). Serializing concurrent requests alone does not enforce a per-minute limit.
+
+Makefile commands, SBERT adapters and excluding large raw PDFs/SQLite files are
+implementation examples, not new mandatory architecture choices (pp9–11).
+API credentials must remain excluded from Git (p11).
+
+Evaluation includes ten development retrieval cases plus commands for generated
+text benchmarks, resumable answer runs and structured model-judged scoring. Shared
+Gemini request pacing is implemented. The scorer uses an explicit rubric, not
+official RAGAS metrics. Live benchmark generation, reference review and measured
+results remain outstanding; see `evaluation.md`. Existing SQL unit tests remain
+part of the offline suite.
 
 ## Delivery milestones
 

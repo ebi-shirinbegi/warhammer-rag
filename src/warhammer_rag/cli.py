@@ -56,6 +56,16 @@ def main(argv: Sequence[str] | None = None) -> int:
     commands.add_parser("check-api", help="Make one small Gemini request to test API access")
     commands.add_parser("index", help="Build rulebook chunks and the offline search index")
     commands.add_parser("evaluate-retrieval", help="Run the offline retrieval development cases")
+    generate = commands.add_parser(
+        "generate-eval", help="Generate a draft text benchmark via Gemini"
+    )
+    generate.add_argument("--output", type=Path, default=Path("evaluation/datasets/text.json"))
+    evaluate = commands.add_parser(
+        "evaluate-answers", help="Run or resume model-judged text evaluation"
+    )
+    evaluate.add_argument("--dataset", type=Path, default=Path("evaluation/datasets/text.json"))
+    evaluate.add_argument("--output", type=Path, default=Path("evaluation/reports/answers.json"))
+    evaluate.add_argument("--limit", type=int, help="Evaluate only the first N cases")
     search = commands.add_parser("search", help="Retrieve rulebook and optional unit evidence")
     search.add_argument("query")
     search.add_argument("--unit", help="Unit name to look up in SQLite")
@@ -73,6 +83,29 @@ def main(argv: Sequence[str] | None = None) -> int:
     except ValidationError:
         # Do not print validation details, which may contain raw environment values.
         parser.exit(2, "Invalid configuration. Check the paths and values in .env.\n")
+    if args.command in {"generate-eval", "evaluate-answers"}:
+        from warhammer_rag.evaluation.answers import evaluate_answers, generate_dataset
+
+        try:
+            if args.command == "generate-eval":
+                result = generate_dataset(settings, args.output)
+                print(f"Generated {len(result['cases'])} draft cases: {args.output}")
+                print("Review every reference against its evidence before evaluation.")
+            else:
+                if args.limit is not None and args.limit < 1:
+                    raise ValueError("Limit must be positive.")
+                print(
+                    json.dumps(
+                        evaluate_answers(settings, args.dataset, args.output, args.limit), indent=2
+                    )
+                )
+            return 0
+        except Exception as exc:
+            print(
+                f"Evaluation failed ({type(exc).__name__}). Check configuration, dataset review "
+                "and saved run metadata. Existing checkpoints are retained."
+            )
+            return 1
     if args.command == "chat":
         from warhammer_rag.web.server import serve
 

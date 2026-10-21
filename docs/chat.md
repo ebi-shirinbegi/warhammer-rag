@@ -6,7 +6,8 @@ the existing instance from the same checkout. Use `--no-browser` to suppress
 automatic opening. Other services on the port are not reused or stopped. Use `--port 8001` to choose another port. The server
 binds only to the local computer and is not a public deployment server.
 
-The server reloads `GOOGLE_API_KEY` and `GOOGLE_MODEL` from the project `.env`
+The server reloads `GOOGLE_API_KEY`, `GOOGLE_MODEL` and `GOOGLE_REQUESTS_PER_MINUTE`
+from the project `.env`
 before each question. Exported environment variables take precedence over that
 file. Data paths remain fixed for the lifetime of the server.
 
@@ -76,3 +77,7 @@ scroll. The welcome layout adapts its spacing and suggestion layout to short
 windows. Starting a new consultation resets the conversation scroll position.
 
 Retry reference: [Google Gemini troubleshooting](https://ai.google.dev/gemini-api/docs/troubleshooting).
+
+Gemini requests use the shared local rate scheduler described in
+[evaluation.md](evaluation.md), including retry attempts. Waiting for a request
+slot is additional to the per-attempt network timeout.

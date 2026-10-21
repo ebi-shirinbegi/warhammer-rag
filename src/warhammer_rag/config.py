@@ -23,6 +23,9 @@ class Settings(BaseSettings):
     )
 
     google_api_key: SecretStr | None = Field(default=None, validation_alias="GOOGLE_API_KEY")
+    google_requests_per_minute: int = Field(
+        default=10, ge=1, le=1000, validation_alias="GOOGLE_REQUESTS_PER_MINUTE"
+    )
     google_model: str | None = Field(default=None, validation_alias="GOOGLE_MODEL")
     project_root: Path = Field(default_factory=_project_root, validation_alias="RAG_PROJECT_ROOT")
     raw_dir: Path = Field(default=Path("data/raw"), validation_alias="RAG_RAW_DIR")

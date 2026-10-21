@@ -28,6 +28,7 @@ def refresh_api_settings(settings: Settings) -> Settings:
         update={
             "google_api_key": current.google_api_key,
             "google_model": current.google_model,
+            "google_requests_per_minute": current.google_requests_per_minute,
         }
     )
 

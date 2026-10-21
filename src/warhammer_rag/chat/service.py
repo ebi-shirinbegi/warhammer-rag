@@ -11,6 +11,7 @@ from google.genai import types
 from google.genai.errors import APIError
 from pydantic import BaseModel, Field
 
+from warhammer_rag.chat.throttle import wait_for_slot
 from warhammer_rag.config import Settings
 from warhammer_rag.retrieval.datasheets import retrieve_unit, unit_details
 from warhammer_rag.retrieval.sqlite import readonly_connection
@@ -77,6 +78,10 @@ class ChatService:
             ),
         ) as client:
             for attempt in range(3):
+                wait_for_slot(
+                    self.settings.project_root / "data/local/api_throttle.sqlite",
+                    self.settings.google_requests_per_minute,
+                )
                 try:
                     response = client.models.generate_content(
                         model=self.settings.google_model,
