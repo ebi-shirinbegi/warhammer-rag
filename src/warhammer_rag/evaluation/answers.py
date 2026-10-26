@@ -3,6 +3,7 @@
 import csv
 import hashlib
 import json
+import re
 import time
 from pathlib import Path
 from typing import Literal
@@ -72,6 +73,15 @@ def write_json(path: Path, value: dict) -> None:
     temporary.replace(path)
 
 
+def source_quote(text: str, quote: str) -> str:
+    """Restore PDF whitespace without accepting changed wording or punctuation."""
+    pattern = r"\s+".join(re.escape(word) for word in quote.split())
+    match = re.search(pattern, text) if pattern else None
+    if match is None:
+        raise ValueError("Generated reference quote is not present in its source.")
+    return match.group(0)
+
+
 def generate_dataset(settings: Settings, output: Path) -> dict:
     chunks_path = settings.processed_dir / "chunks.json"
     chunks = json.loads(chunks_path.read_text())
@@ -98,8 +108,8 @@ def generate_dataset(settings: Settings, output: Path) -> dict:
     if result["review_status"] != "pending":
         raise ValueError("Do not overwrite a reviewed dataset.")
     cases = result["cases"]
-    # Distinct page groups provide movement, attacks and mission coverage.
-    for batch_index, pages in enumerate(({6, 7, 13}, {20, 21, 22}, {58, 59})):
+    # Distinct page groups cover movement, attacks, missions and stratagems.
+    for batch_index, pages in enumerate(({6, 7, 13}, {20, 21, 22}, {58, 59}, {41, 42})):
         if batch_index < result["batches_completed"]:
             continue
         selected = [c for c in chunks if set(c["pages"]) & pages and c["text"].strip()]
@@ -110,8 +120,9 @@ def generate_dataset(settings: Settings, output: Path) -> dict:
         for case in batch.cases:
             for evidence in case.evidence:
                 source = by_id.get(evidence.chunk_id)
-                if not source or evidence.quote not in source["text"]:
+                if not source:
                     raise ValueError("Generated reference quote is not present in its source.")
+                evidence.quote = source_quote(source["text"], evidence.quote)
             if case.kind == "multi_hop" and len({e.chunk_id for e in case.evidence}) < 2:
                 raise ValueError("Multi-hop case must cite at least two chunks.")
             case.id = f"text-{len(cases) + 1:02}"

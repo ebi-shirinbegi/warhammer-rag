@@ -6,14 +6,14 @@
 index with the Porter tokenizer and BM25 ranking. This is a reproducible lexical
 baseline without embeddings, API calls or a separate database service.
 
-Chunks follow section and heading boundaries. Paragraphs are packed toward an
+Chunks follow section and heading boundaries. Paragraphs are packed toward a
 1,800-character target; individual paragraphs and stratagems are never split to
 meet that target. Stratagems remain atomic, including their restrictions. A chunk
 can span consecutive pages in the same section. Adjacent chunks with the same
 heading carry continuation IDs for later context expansion. The current search
 command returns matching chunks without automatically expanding these links.
 
-Cover/introduction pages 1–4, the illustrative datasheet on page 37 and fragments
+Cover/introduction pages 1-4, the illustrative datasheet on page 37 and fragments
 containing only numbers are excluded from retrieval. They remain in the parsed
 artifact. Heading text is indexed separately with increased weight. Chunk IDs,
 source digest, pages and original block IDs are retained in results.
@@ -42,8 +42,8 @@ Detail queries have a SQLite instruction budget; no model-generated SQL is execu
 `search QUERY --unit NAME` returns PDF hits and SQLite evidence in one JSON object.
 Only a unique exact unit name is resolved automatically. Ambiguous and partial
 names return candidates; no default Space Marine profile is assumed. The two
-sources remain separate, including any conflicting rules. This command supplies
-evidence for the future answer-generation layer, not a final game-state ruling.
+sources remain separate, including any conflicting rules. This command exposes evidence for inspection; the chat service uses the same
+retrieval functions when composing answers.
 
 ## Development evaluation
 
@@ -58,4 +58,5 @@ These cases informed development and are not a held-out benchmark. They do not
 measure answer correctness, grounding or multi-turn behavior. Separate database
 tests cover Intercessor toughness, the six Hive Tyrant abilities, ambiguity,
 missing IDs, literal query handling, source immutability and combined evidence.
-Future comparisons require a broader, frozen evaluation set and answer-level checks.
+Answer-level evaluation uses a separate generated and reviewed text benchmark;
+see [evaluation](evaluation.md).

@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-26",
+  "model": "gemini-3.5-flash-lite",
+  "records": {
+    "unit": {
+      "question": "What is the Toughness of an Intercessor Squad?",
+      "history": [],
+      "response": {
+        "status": "answer",
+        "response_mode": "database_lookup",
+        "paragraphs": [
+          {
+            "text": "Intercessor Squad: Toughness 4.",
+            "citations": [
+              "S1"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "S1",
+            "kind": "sqlite",
+            "title": "Intercessor Squad",
+            "locator": "Datasheet 000001157",
+            "url": null,
+            "content": "{\"source_kind\": \"sqlite\", \"table\": \"datasheets\", \"id\": \"000001157\", \"source_sha256\": \"364f412c3c1802d24ccc97eb74ffac78e6a5894a312b2fde685045945595fbc5\", \"unit\": {\"Id\": \"000001157\", \"name\": \"Intercessor Squad\", \"factionId\": \"SM\", \"sourceId\": \"000000139\", \"legend\": \"Intercessor Squads are capable of laying down punishing fire while advancing or holding ground against the enemy. They have access to a range of bolt weaponry suited to varied battlefield assignments, from engaging enemies at long range to cleansing bunker complexes.\", \"role\": \"\", \"loadout\": \"Every model is equipped with: bolt pistol; bolt rifle; close combat weapon.\", \"transport\": \"\", \"virtual\": \"false\", \"isSupport\": \"false\", \"leaderHead\": \"\", \"leaderFooter\": \"\", \"damagedW\": \"\", \"damagedDescription\": \"\", \"link\": \"https://wahapedia.ru/wh40k11ed/factions/space-marines/Intercessor-Squad\"}, \"source\": {\"Id\": \"000000139\", \"name\": \"Space Marines\", \"type\": \"Faction Pack\", \"edition\": \"11\", \"version\": \"1.2\", \"errataDate\": \"26.08.2026 0:00:00\", \"errataLink\": \"https://assets.warhammer-community.com/eng_wh40k_faction_pack_space_marines-kxoxqpsahz-u0lzirv0zl.pdf\"}, \"models\": [{\"DatasheetId\": \"000001157\", \"line\": \"1\", \"name\": \"Intercessor Squad\", \"m\": \"6\\\"\", \"t\": \"4\", \"sv\": \"3+\", \"invSv\": \"-\", \"invSvDescr\": \"\", \"w\": \"2\", \"ld\": \"6+\", \"oc\": \"2\", \"baseSize\": \"32mm\", \"baseSizeDescr\": \"\"}], \"costs\": [{\"DatasheetId\": \"000001157\", \"line\": \"1\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"2\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"3\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"4\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"5\", \"description\": \"10 models\", \"cost\": \"150\"}, {\"DatasheetId\": \"000001157\", \"line\": \"6\", \"description\": \"10 models\", \"cost\": \"150\"}, {\"DatasheetId\": \"000001157\", \"line\": \"7\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"8\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"9\", \"description\": \"10 models\", \"cost\": \"150\"}], \"keywords\": [{\"DatasheetId\": \"000001157\", \"keyword\": \"Adeptus Astartes\", \"model\": \"\", \"isFactionKeyword\": \"true\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Battleline\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Grenades\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Imperium\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Infantry\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Intercessor Squad\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Tacticus\", \"model\": \"\", \"isFactionKeyword\": \"false\"}], \"abilities\": [{\"line\": \"1\", \"type\": \"Faction\", \"abilityId\": \"000008350\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Oath of Moment\", \"description\": \"If your Army Faction is ADEPTUS ASTARTES, at the start of your Command phase, select one unit from your opponentâs army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:You can re-roll the Hit roll.If you are using a Codex: Space Marines Detachment and your army does not include one or more units with the Black Templars, Blood Angels, Dark Angels, Deathwatch or Space Wolves keywords, or one or more units from those factionsâ Munitorum Field Manual sections, add 1 to the Wound roll as well.\"}, {\"line\": \"2\", \"type\": \"Datasheet\", \"abilityId\": \"\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Objective Secured\", \"description\": \"If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.\"}, {\"line\": \"3\", \"type\": \"Datasheet\", \"abilityId\": \"\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Hail of Bolts\", \"description\": \"In your Shooting phase, when this unit is selected to shoot, select up to one visible enemy unit. While making those attacks, this unitâs Bolt Rifle attacks that targeted that enemy unit have +2 A.\"}], \"snapshot_updated\": \"2026-09-01 17:05:19\"}",
+            "source_sha256": "364f412c3c1802d24ccc97eb74ffac78e6a5894a312b2fde685045945595fbc5"
+          }
+        ]
+      },
+      "latency_seconds": 0.007,
+      "source_review": {
+        "outcome": "pass for this scenario",
+        "reason": "Exact lookup returned Intercessor Squad Toughness 4 with the correct datasheet citation and no model generation."
+      }
+    },
+    "combined": {
+      "question": "Can an Intercessor Squad use grenades? What are the restrictions?",
+      "history": [],
+      "response": {
+        "status": "answer",
+        "paragraphs": [
+          {
+            "text": "Yes, an Intercessor Squad has the Grenades keyword, allowing it to be targeted by the Grenade stratagem.",
+            "citations": [
+              "S1",
+              "S2"
+            ]
+          },
+          {
+            "text": "When using the Grenade stratagem, the restrictions are: it costs 1CP, it must be used during your Shooting phase, the target must be one Grenades unit from your army that is not within Engagement Range of any enemy units and has not been selected to shoot this phase, and you must select one enemy unit that is not within Engagement Range of any units from your army and is within 8\" of and visible to your Grenades unit.",
+            "citations": [
+              "S2"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "S1",
+            "kind": "sqlite",
+            "title": "Intercessor Squad",
+            "locator": "Datasheet 000001157",
+            "url": null,
+            "content": "{\"source_kind\": \"sqlite\", \"table\": \"datasheets\", \"id\": \"000001157\", \"source_sha256\": \"364f412c3c1802d24ccc97eb74ffac78e6a5894a312b2fde685045945595fbc5\", \"unit\": {\"Id\": \"000001157\", \"name\": \"Intercessor Squad\", \"factionId\": \"SM\", \"sourceId\": \"000000139\", \"legend\": \"Intercessor Squads are capable of laying down punishing fire while advancing or holding ground against the enemy. They have access to a range of bolt weaponry suited to varied battlefield assignments, from engaging enemies at long range to cleansing bunker complexes.\", \"role\": \"\", \"loadout\": \"Every model is equipped with: bolt pistol; bolt rifle; close combat weapon.\", \"transport\": \"\", \"virtual\": \"false\", \"isSupport\": \"false\", \"leaderHead\": \"\", \"leaderFooter\": \"\", \"damagedW\": \"\", \"damagedDescription\": \"\", \"link\": \"https://wahapedia.ru/wh40k11ed/factions/space-marines/Intercessor-Squad\"}, \"source\": {\"Id\": \"000000139\", \"name\": \"Space Marines\", \"type\": \"Faction Pack\", \"edition\": \"11\", \"version\": \"1.2\", \"errataDate\": \"26.08.2026 0:00:00\", \"errataLink\": \"https://assets.warhammer-community.com/eng_wh40k_faction_pack_space_marines-kxoxqpsahz-u0lzirv0zl.pdf\"}, \"models\": [{\"DatasheetId\": \"000001157\", \"line\": \"1\", \"name\": \"Intercessor Squad\", \"m\": \"6\\\"\", \"t\": \"4\", \"sv\": \"3+\", \"invSv\": \"-\", \"invSvDescr\": \"\", \"w\": \"2\", \"ld\": \"6+\", \"oc\": \"2\", \"baseSize\": \"32mm\", \"baseSizeDescr\": \"\"}], \"costs\": [{\"DatasheetId\": \"000001157\", \"line\": \"1\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"2\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"3\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"4\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"5\", \"description\": \"10 models\", \"cost\": \"150\"}, {\"DatasheetId\": \"000001157\", \"line\": \"6\", \"description\": \"10 models\", \"cost\": \"150\"}, {\"DatasheetId\": \"000001157\", \"line\": \"7\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"8\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"9\", \"description\": \"10 models\", \"cost\": \"150\"}], \"keywords\": [{\"DatasheetId\": \"000001157\", \"keyword\": \"Adeptus Astartes\", \"model\": \"\", \"isFactionKeyword\": \"true\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Battleline\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Grenades\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Imperium\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Infantry\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Intercessor Squad\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Tacticus\", \"model\": \"\", \"isFactionKeyword\": \"false\"}], \"abilities\": [{\"line\": \"1\", \"type\": \"Faction\", \"abilityId\": \"000008350\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Oath of Moment\", \"description\": \"If your Army Faction is ADEPTUS ASTARTES, at the start of your Command phase, select one unit from your opponentâs army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:You can re-roll the Hit roll.If you are using a Codex: Space Marines Detachment and your army does not include one or more units with the Black Templars, Blood Angels, Dark Angels, Deathwatch or Space Wolves keywords, or one or more units from those factionsâ Munitorum Field Manual sections, add 1 to the Wound roll as well.\"}, {\"line\": \"2\", \"type\": \"Datasheet\", \"abilityId\": \"\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Objective Secured\", \"description\": \"If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.\"}, {\"line\": \"3\", \"type\": \"Datasheet\", \"abilityId\": \"\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Hail of Bolts\", \"description\": \"In your Shooting phase, when this unit is selected to shoot, select up to one visible enemy unit. While making those attacks, this unitâs Bolt Rifle attacks that targeted that enemy unit have +2 A.\"}], \"snapshot_updated\": \"2026-09-01 17:05:19\"}",
+            "source_sha256": "364f412c3c1802d24ccc97eb74ffac78e6a5894a312b2fde685045945595fbc5"
+          },
+          {
+            "id": "S2",
+            "kind": "pdf",
+            "title": "GRENADE",
+            "locator": "Core Rules · p. 42",
+            "url": "/sources/core-rules.pdf#page=42",
+            "content": "GRENADE — 1CP\n\nCORE – WARGEAR STRATAGEM\n\nPriming their hand-held projectiles, these warriors draw back and hurl death into the enemy’s midst.\n\nWHEN: Your Shooting phase.\n\nTARGET: One Grenades unit from your army that is not within Engagement Range of any enemy units and has not been selected to shoot this phase.\n\nEFFECT: Select one enemy unit that is not within Engagement Range of any units from your army and is within 8\" of and visible to your Grenades unit. Roll six D6: for each 4+, that enemy unit suffers 1 mortal wound.",
+            "source_sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364"
+          },
+          {
+            "id": "S3",
+            "kind": "pdf",
+            "title": "6 UNIT COMPOSITION AND OTHER RULES",
+            "locator": "Core Rules · p. 38",
+            "url": "/sources/core-rules.pdf#page=38",
+            "content": "This section details the number and types of models in the unit, and the default weapons and wargear those models are equipped with. It may also describe other interactions, such as how units with the Leader ability can attach to other units, and passenger restrictions that may apply to Transport models.",
+            "source_sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364"
+          },
+          {
+            "id": "S4",
+            "kind": "pdf",
+            "title": "RAPID INGRESS",
+            "locator": "Core Rules · p. 42",
+            "url": "/sources/core-rules.pdf#page=42",
+            "content": "RAPID INGRESS — 1CP\n\nCORE – STRATEGIC PLOY STRATAGEM\n\nBe it cunning strategy, potent technology or supernatural ritual, there are many means by which a commander may hasten their warriors’ onset.\n\nWHEN: End of your opponent’s Movement phase.\n\nTARGET: One unit from your army that is in Reserves.\n\nEFFECT: Your unit can arrive on the battlefield as if it were the Reinforcements step of your Movement phase.\n\nRESTRICTIONS: You cannot use this Stratagem to enable a unit to arrive on the battlefield during a battle round it would not normally be able to do so in.",
+            "source_sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364"
+          },
+          {
+            "id": "S5",
+            "kind": "pdf",
+            "title": "HEROIC INTERVENTION",
+            "locator": "Core Rules · p. 42",
+            "url": "/sources/core-rules.pdf#page=42",
+            "content": "HEROIC INTERVENTION — 2CP\n\nCORE – STRATEGIC PLOY STRATAGEM\n\nVoices raised in furious war cries, your warriors surge forth to meet the enemy’s onslaught head-on.\n\nWHEN: Your opponent’s Charge phase, just after an enemy unit ends a Charge move.\n\nTARGET: One unit from your army that is within 6\" of that enemy unit and would be eligible to declare a charge against that enemy unit if it were your Charge phase.\n\nEFFECT: Your unit now declares a charge that targets only that enemy unit, and you resolve that charge as if it were your Charge phase.\n\nRESTRICTIONS: You can only select a Vehicle unit from your army if it is a Walker. Note that even if this charge is successful, your unit does not receive any Charge bonus this turn (pg 29).",
+            "source_sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364"
+          },
+          {
+            "id": "S6",
+            "kind": "pdf",
+            "title": "FIRE OVERWATCH",
+            "locator": "Core Rules · p. 42",
+            "url": "/sources/core-rules.pdf#page=42",
+            "content": "FIRE OVERWATCH — 1CP\n\nCORE – STRATEGIC PLOY STRATAGEM\n\nA hail of wildfire can drive back advancing foes.\n\nWHEN: Your opponent’s Movement or Charge phase, just after an enemy unit is set up or when an enemy unit starts or ends a Normal, Advance, Fall Back or Charge move.\n\nTARGET: One unit from your army that is within 24\" of that enemy unit and that would be eligible to shoot if it were your Shooting phase.\n\nEFFECT: Your unit can shoot that enemy unit as if it were your Shooting phase.\n\nRESTRICTIONS: Until the end of the phase, each time a model in your unit makes a ranged attack, an unmodified Hit roll of 6 is required to score a hit, irrespective of the attacking weapon’s Ballistic Skill or any modifiers. You can only use this Stratagem once per turn.",
+            "source_sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364"
+          }
+        ]
+      },
+      "latency_seconds": 10.154,
+      "source_review": {
+        "outcome": "pass for this scenario",
+        "reason": "Answer used the unit Grenades keyword from SQLite and the PDF stratagem restrictions: 1 CP, own Shooting phase, not engaged, not selected to shoot, enemy not engaged, within 8 inches and visible. Both source types were returned."
+      }
+    },
+    "follow_up": {
+      "question": "And how many wounds does it have?",
+      "history": [
+        {
+          "role": "user",
+          "content": "What is the Toughness of an Intercessor Squad?"
+        },
+        {
+          "role": "assistant",
+          "content": "Intercessor Squad: Toughness 4."
+        }
+      ],
+      "response": {
+        "status": "answer",
+        "paragraphs": [
+          {
+            "text": "Intercessor Squad: Wounds 2.",
+            "citations": [
+              "S1"
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "id": "S1",
+            "kind": "sqlite",
+            "title": "Intercessor Squad",
+            "locator": "Datasheet 000001157",
+            "url": null,
+            "content": "{\"source_kind\": \"sqlite\", \"table\": \"datasheets\", \"id\": \"000001157\", \"source_sha256\": \"364f412c3c1802d24ccc97eb74ffac78e6a5894a312b2fde685045945595fbc5\", \"unit\": {\"Id\": \"000001157\", \"name\": \"Intercessor Squad\", \"factionId\": \"SM\", \"sourceId\": \"000000139\", \"legend\": \"Intercessor Squads are capable of laying down punishing fire while advancing or holding ground against the enemy. They have access to a range of bolt weaponry suited to varied battlefield assignments, from engaging enemies at long range to cleansing bunker complexes.\", \"role\": \"\", \"loadout\": \"Every model is equipped with: bolt pistol; bolt rifle; close combat weapon.\", \"transport\": \"\", \"virtual\": \"false\", \"isSupport\": \"false\", \"leaderHead\": \"\", \"leaderFooter\": \"\", \"damagedW\": \"\", \"damagedDescription\": \"\", \"link\": \"https://wahapedia.ru/wh40k11ed/factions/space-marines/Intercessor-Squad\"}, \"source\": {\"Id\": \"000000139\", \"name\": \"Space Marines\", \"type\": \"Faction Pack\", \"edition\": \"11\", \"version\": \"1.2\", \"errataDate\": \"26.08.2026 0:00:00\", \"errataLink\": \"https://assets.warhammer-community.com/eng_wh40k_faction_pack_space_marines-kxoxqpsahz-u0lzirv0zl.pdf\"}, \"models\": [{\"DatasheetId\": \"000001157\", \"line\": \"1\", \"name\": \"Intercessor Squad\", \"m\": \"6\\\"\", \"t\": \"4\", \"sv\": \"3+\", \"invSv\": \"-\", \"invSvDescr\": \"\", \"w\": \"2\", \"ld\": \"6+\", \"oc\": \"2\", \"baseSize\": \"32mm\", \"baseSizeDescr\": \"\"}], \"costs\": [{\"DatasheetId\": \"000001157\", \"line\": \"1\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"2\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"3\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"4\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"5\", \"description\": \"10 models\", \"cost\": \"150\"}, {\"DatasheetId\": \"000001157\", \"line\": \"6\", \"description\": \"10 models\", \"cost\": \"150\"}, {\"DatasheetId\": \"000001157\", \"line\": \"7\", \"description\": \"YOUR UNIT COSTS\", \"cost\": \"\"}, {\"DatasheetId\": \"000001157\", \"line\": \"8\", \"description\": \"5 models\", \"cost\": \"80\"}, {\"DatasheetId\": \"000001157\", \"line\": \"9\", \"description\": \"10 models\", \"cost\": \"150\"}], \"keywords\": [{\"DatasheetId\": \"000001157\", \"keyword\": \"Adeptus Astartes\", \"model\": \"\", \"isFactionKeyword\": \"true\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Battleline\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Grenades\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Imperium\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Infantry\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Intercessor Squad\", \"model\": \"\", \"isFactionKeyword\": \"false\"}, {\"DatasheetId\": \"000001157\", \"keyword\": \"Tacticus\", \"model\": \"\", \"isFactionKeyword\": \"false\"}], \"abilities\": [{\"line\": \"1\", \"type\": \"Faction\", \"abilityId\": \"000008350\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Oath of Moment\", \"description\": \"If your Army Faction is ADEPTUS ASTARTES, at the start of your Command phase, select one unit from your opponentâs army. Until the start of your next Command phase, that enemy unit is your Oath of Moment target. Each time a model with this ability makes an attack that targets your Oath of Moment target:You can re-roll the Hit roll.If you are using a Codex: Space Marines Detachment and your army does not include one or more units with the Black Templars, Blood Angels, Dark Angels, Deathwatch or Space Wolves keywords, or one or more units from those factionsâ Munitorum Field Manual sections, add 1 to the Wound roll as well.\"}, {\"line\": \"2\", \"type\": \"Datasheet\", \"abilityId\": \"\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Objective Secured\", \"description\": \"If you control an objective marker at the end of your Command phase and this unit is within range of that objective marker, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.\"}, {\"line\": \"3\", \"type\": \"Datasheet\", \"abilityId\": \"\", \"model\": \"\", \"parameter\": \"\", \"name\": \"Hail of Bolts\", \"description\": \"In your Shooting phase, when this unit is selected to shoot, select up to one visible enemy unit. While making those attacks, this unitâs Bolt Rifle attacks that targeted that enemy unit have +2 A.\"}], \"snapshot_updated\": \"2026-09-01 17:05:19\"}",
+            "source_sha256": "364f412c3c1802d24ccc97eb74ffac78e6a5894a312b2fde685045945595fbc5"
+          }
+        ]
+      },
+      "latency_seconds": 26.165,
+      "source_review": {
+        "outcome": "pass for this scenario",
+        "reason": "Resolved the pronoun from the preceding Intercessor question and returned Wounds 2 from that datasheet."
+      }
+    },
+    "ambiguous": {
+      "question": "What is the Toughness of a Space Marine?",
+      "history": [],
+      "response": {
+        "status": "clarification",
+        "paragraphs": [
+          {
+            "text": "Which unit do you mean? For example, Intercessor Squad or Heavy Intercessor Squad.",
+            "citations": []
+          }
+        ],
+        "sources": []
+      },
+      "latency_seconds": 10.075,
+      "source_review": {
+        "outcome": "pass for this scenario",
+        "reason": "Requested a specific unit rather than assigning one universal Space Marine toughness."
+      }
+    }
+  }
+}

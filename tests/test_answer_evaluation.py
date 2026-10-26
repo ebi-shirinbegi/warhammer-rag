@@ -7,6 +7,17 @@ from warhammer_rag.config import Settings
 from warhammer_rag.evaluation.answers import Scores, digest, evaluate_answers
 
 
+def test_source_quote_restores_line_breaks_but_rejects_changed_facts():
+    from warhammer_rag.evaluation.answers import source_quote
+
+    source = 'Models must be within 2" horizontally\n\nand 5" vertically.'
+    assert source_quote(source, 'within 2" horizontally and 5" vertically.') == (
+        'within 2" horizontally\n\nand 5" vertically.'
+    )
+    with pytest.raises(ValueError, match="quote"):
+        source_quote(source, 'within 3" horizontally and 5" vertically.')
+
+
 @pytest.fixture
 def evaluation(tmp_path, monkeypatch):
     settings = Settings(_env_file=None, project_root=tmp_path, google_model="test")
@@ -125,7 +136,7 @@ def test_dataset_generation_checkpoints_batches_and_rejects_invented_quotes(tmp_
     quote = "Each model must follow this example rule."
     chunks = [
         {"id": f"c{i}", "text": quote, "pages": [page]}
-        for i, page in enumerate([6, 7, 20, 21, 58, 59])
+        for i, page in enumerate([6, 7, 20, 21, 58, 59, 41, 42])
     ]
     (settings.processed_dir / "chunks.json").write_text(json.dumps(chunks))
 
@@ -152,11 +163,11 @@ def test_dataset_generation_checkpoints_batches_and_rejects_invented_quotes(tmp_
     with pytest.raises(RuntimeError):
         generate_dataset(settings, output)
     assert json.loads(output.read_text())["batches_completed"] == 1
-    service.generate.side_effect = [batch(["c2", "c3"]), batch(["c4", "c5"])]
+    service.generate.side_effect = [batch(["c2", "c3"]), batch(["c4", "c5"]), batch(["c6", "c7"])]
     dataset = generate_dataset(settings, output)
-    assert len(dataset["cases"]) == 9
+    assert len(dataset["cases"]) == 12
     assert dataset["review_status"] == "pending"
-    assert service.generate.call_count == 4
+    assert service.generate.call_count == 5
     invalid = batch(["invented", "c1"])
     service.generate.side_effect = [invalid]
     with pytest.raises(ValueError, match="quote"):

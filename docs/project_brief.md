@@ -6,6 +6,8 @@ A multi-turn Warhammer 40,000 chatbot using the supplied Core Rules PDF and SQLi
 unit database. Supported questions must include text-only, database-only and
 combined-source cases. The LLM backend is Google AI Studio.
 
+Authors: Mohammad Ebrahim SHARIFI and Muhammad Ibrar Ul HASSAN.
+
 ## Assignment requirements
 
 Page references use the supplied PDFs' 1-based page numbers.
@@ -19,20 +21,24 @@ Page references use the supplied PDFs' 1-based page numbers.
 | Generated evaluation dataset and pipeline | Session 1 p40 | Reviewed, versioned questions and repeatable results |
 | Unit tests | Session 1 p41 | Runnable offline test suite |
 | Google AI Studio backend | Session 1 p41 | Configurable Google API integration |
-| Modular, documented code | Session 1 pp41–42 | Clear package boundaries and setup documentation |
+| Modular, documented code | Session 1 pp41-42 | Clear package boundaries and setup documentation |
 | Runnable chat, tests and evaluation | Session 1 p42 | Documented entry points |
 | Parsed rulebook delivered with repository URL | Lab 2 p2 | Versioned parse artifact and accessible repository |
 | Credentials excluded from Git | Lab 2 p5 | Local `.env` and tracked configuration template |
+| Both students clearly identified in the repository | October 22 announcement | Names in the README and application footer |
+| Technical choices and their justifications | October 22 announcement | Architecture decisions, tradeoffs and evaluation method |
+| Repository link sent by email | October 22 announcement | Submission by the students |
 
-Source references: Lab 1, Lab 2, Lab 3 and Session 1. Assignment and lecture documents
+Source references: Lab 1, Lab 2, Lab 3, Session 1 and the October 22 announcement. Assignment and lecture documents
 are local reference material and are not distributed with the repository.
 
 ## Submission and assessment
 
 - Deadline stated in Lab 2 p2 and repeated in Lab 3 p2: **November 2nd, 00:00**. Year and timezone are not
   specified. This denotes the start of November 2.
-- Submission: repository URL and parsed rulebook; the latter may be included in
-  the repository.
+- Submission: email the repository URL to the instructor, as specified on October 22.
+  Include the parsed rulebook in the repository, as allowed by Labs 2 and 3.
+  The October 22 announcement does not change the project deadline.
 - Team size: two. Project: 8/20 course points. Individual quiz: 12/20.
 - Project assessment areas: RAG setup, evaluation and monitoring, advanced RAG,
   interface, and code quality. Subweights are not specified.
@@ -45,11 +51,12 @@ clarification: Intercessor and Heavy Intercessor profiles differ.
 ## Design constraints
 
 The framework and architecture are open choices (Session 1 p41). Lab 2 p3 marks
-its folder layout and library examples as suggestions. LangGraph, Textual and
-RAGAS are options, not individually mandatory dependencies.
+its folder layout and library examples as suggestions. LangGraph and Textual are examples. Lab 3 p3 also marks its implementation
+slides as suggestions; its demonstrated evaluator uses RAGAS. This project uses
+a custom Gemini rubric and documents the difference in `evaluation.md`.
 
 Session 1 p40 permits a small generated evaluation set, with ten questions given
-as an example. Session 2 pp35–40 recommends a larger starting set for broader
+as an example. Session 2 pp35-40 recommends a larger starting set for broader
 coverage. Generated reference answers require review; comparisons use a frozen,
 versioned dataset. Evaluation separates retrieval quality, grounding, correctness,
 latency and resource use.
@@ -75,7 +82,7 @@ Lab 3 provides the following evaluation workflow:
   (p5).
 - Run questions through the application and persist reference answers, generated
   responses and contexts actually used by the agent, with resumable checkpoints
-  (pp6–7). Retrieval skipped by the router must count against the evaluation;
+  (pp6-7). Retrieval skipped by the router must count against the evaluation;
   separately retrieved ideal contexts must not replace the agent's contexts.
 - Measure faithfulness, factual correctness, context precision with reference
   and context recall; export per-question scores and responses (p7).
@@ -85,15 +92,15 @@ Lab 3 provides the following evaluation workflow:
   (p13). Serializing concurrent requests alone does not enforce a per-minute limit.
 
 Makefile commands, SBERT adapters and excluding large raw PDFs/SQLite files are
-implementation examples, not new mandatory architecture choices (pp9–11).
+implementation examples, not new mandatory architecture choices (pp9-11).
 API credentials must remain excluded from Git (p11).
 
 Evaluation includes ten development retrieval cases plus commands for generated
 text benchmarks, resumable answer runs and structured model-judged scoring. Shared
 Gemini request pacing is implemented. The scorer uses an explicit rubric, not
-official RAGAS metrics. Live benchmark generation, reference review and measured
-results remain outstanding; see `evaluation.md`. Existing SQL unit tests remain
-part of the offline suite.
+official RAGAS metrics. The generated text benchmark contains twelve reviewed
+cases across four topic groups; see `evaluation.md` for the method and recorded
+results. Existing SQL unit tests remain part of the offline suite.
 
 ## Delivery milestones
 
@@ -106,6 +113,6 @@ part of the offline suite.
 | Evaluation | Frozen cases, baseline metrics and measured improvements |
 | Release | Clean-checkout execution of chat, tests and evaluation with supplied parsed artifacts |
 
-Open assignment details: deadline year/timezone, submission destination and
-repository access requirements. Source precedence remains unresolved where the
-supplied PDF and database disagree; answers must retain that distinction.
+The repository is public. The deadline year and timezone are not stated in the
+lab slides. Source precedence remains unspecified where the supplied PDF and
+database disagree; answers must retain that distinction.

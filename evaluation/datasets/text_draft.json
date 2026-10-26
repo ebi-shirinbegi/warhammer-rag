@@ -1,0 +1,209 @@
+{
+  "generator_model": "gemini-3.5-flash-lite",
+  "generator_sha256": "fc3c8af4ca22281312b3892a4482d64b2849256e20ac083f447a351e38cda224",
+  "source_sha256": "4d0e8019cbfddd6f46781d5b4ed31d46fb21eb2d0d10a0f6fabefac0ce054364",
+  "chunks_sha256": "b0af4170ed34e62f821907dfe0f187d72244315cd9df8bd422e57609ef51977c",
+  "status": "unreviewed model output; not for evaluation",
+  "cases": [
+    {
+      "id": "case_summary_001",
+      "kind": "summary",
+      "question": "What happens if a unit fails to maintain Unit Coherency at the end of a turn, and what are the specific distance requirements for units of different sizes?",
+      "reference": "At the end of every turn, the controlling player must remove models one at a time from units that are not in Unit Coherency until only a single group of models remains in play and in Unit Coherency. Removed models count as destroyed but do not trigger any rules for being destroyed. For units with 2-6 models, each model must be within 2\" horizontally and 5\" vertically of at least one other model from the same unit. For units with 7 or more models, each model must instead be within 2\" horizontally and 5\" vertically of at least two other models from the same unit.",
+      "evidence": [
+        {
+          "chunk_id": "rules-ed58e0e9c8afdcc5",
+          "quote": "A unit that contains more than one model must be set up and end any kind of move as a single group, with all of its models within 2\" horizontally and 5\" vertically of at least one other model from that unit. While a unit has seven or more models, all of its models must instead be set up and end any kind of move within 2\" horizontally and 5\" vertically of at least two other models from that unit. This is called Unit Coherency."
+        },
+        {
+          "chunk_id": "rules-ed58e0e9c8afdcc5",
+          "quote": "At the end of every turn, each player must remove models, one at a time, from any of the units from their armies that are no longer in Unit Coherency, until only a single group of models from each of those units remains in play and in Unit Coherency. Models removed in this way count as having been destroyed, but they never trigger any rules that apply when a model is destroyed."
+        }
+      ]
+    },
+    {
+      "id": "case_single_hop_001",
+      "kind": "single_hop",
+      "question": "What movement options are available to a unit at the start of the Movement phase if it begins that phase within Engagement Range of any enemy models?",
+      "reference": "If a unit is within Engagement Range of any enemy models at the start of the Movement phase, it can either Remain Stationary or Fall Back.",
+      "evidence": [
+        {
+          "chunk_id": "rules-20a443e6f95f1d43",
+          "quote": "If that unit is within Engagement Range of any enemy models, it can either Remain Stationary or Fall Back."
+        }
+      ]
+    },
+    {
+      "id": "case_multi_hop_001",
+      "kind": "multi_hop",
+      "question": "How must distances be measured between models, and what definition establishes when two models are considered within Engagement Range of each other?",
+      "reference": "Distances between models are measured between the closest points of the bases of the models being measured to and from (or to the closest point of any part of the model if it does not have a base). Engagement Range is defined as the zone of threat where a model is within 1\" horizontally and 5\" vertically of an enemy model, which places those models and their units within Engagement Range of each other.",
+      "evidence": [
+        {
+          "chunk_id": "rules-88bd5e3d3e641f83",
+          "quote": "When measuring the distance between models, measure between the closest points of the bases of the models you’re measuring to and from. If a model does not have a base, measure to the closest point of any part of that model instead."
+        },
+        {
+          "chunk_id": "rules-a0b39c3547971306",
+          "quote": "While a model is within 1\" horizontally and 5\" vertically of an enemy model, those models – and their units – are within Engagement Range of each other."
+        }
+      ]
+    },
+    {
+      "id": "case_summary",
+      "kind": "summary",
+      "question": "Provide a complete synthesis of the rules governing how saving throws are made and modified during the attack sequence, including armour saves, invulnerable saves, and core limitations.",
+      "reference": "Saving throws are made by the player controlling the target unit rolling one D6 and modifying it by the attack's Armour Penetration (AP) characteristic if making an armour save. If the resulting modified roll is greater than or equal to the model's Save (Sv) characteristic, the save is successful and the attack sequence ends; otherwise, the save fails and the model suffers damage. An unmodified saving throw of 1 always fails. Additionally, saving throws can never be improved by more than +1. Models with an invulnerable save listed on their datasheet may choose to use that invulnerable save instead of their normal Save characteristic when an attack is allocated. Unlike armour saving throws, invulnerable saving throws are never modified by an attack's Armour Penetration characteristic, but they otherwise follow normal saving throw rules.",
+      "evidence": [
+        {
+          "chunk_id": "rules-19e334efa7a3abff",
+          "quote": "The player controlling the target unit then makes one saving throw. By default, this will be an armour saving throw using their model’s Save (Sv) characteristic, but some models have invulnerable saves that can be used instead (see right). To make an armour saving throw, roll one D6, then modify the result by the Armour Penetration (AP) characteristic of the attack. For example, if the attack has an AP of -1, then 1 is subtracted from the saving throw. If the result is greater than or equal to the Save characteristic of the model the attack was allocated to, then that saving throw is successful and the attack sequence ends. Otherwise, that saving throw fails and that model suffers damage (pg 23). An unmodified saving throw of 1 always fails. A saving throw can never be improved by more than +1."
+        },
+        {
+          "chunk_id": "rules-7fe134f7993706af",
+          "quote": "Unlike armour saving throws (which use a model’s Save characteristic), invulnerable saving throws are never modified by an attack’s Armour Penetration characteristic, but otherwise follow the normal rules for saving throws."
+        }
+      ]
+    },
+    {
+      "id": "case_single_hop",
+      "kind": "single_hop",
+      "question": "What specific rule applies to wound rolls regarding critical wounds, automatic failures, and modifiers?",
+      "reference": "An unmodified Wound roll of 6 is called a Critical Wound and is always successful. An unmodified Wound roll of 1 always fails. Furthermore, a Wound roll can never be modified by more than -1 or +1.",
+      "evidence": [
+        {
+          "chunk_id": "rules-f9bcd9a9f0a6904f",
+          "quote": "An unmodified Wound roll of 6 is called a Critical Wound and is always successful. An unmodified Wound roll of 1 always fails. A Wound roll can never be modified by more than -1 or +1."
+        }
+      ]
+    },
+    {
+      "id": "case_multi_hop",
+      "kind": "multi_hop",
+      "question": "Can a Monster or Vehicle unit shoot while it is within Engagement Range of an enemy unit, and if so, how does this affect the Hit rolls for its ranged attacks?",
+      "reference": "Monster and Vehicle units are eligible to shoot in their controlling player's Shooting phase even while they are within Engagement Range of one or more enemy units. However, each time a Monster or Vehicle model makes a ranged attack, if its unit was within Engagement Range of one or more enemy units when it selected its targets, unless that attack is made with a Pistol, 1 is subtracted from that attack's Hit roll.",
+      "evidence": [
+        {
+          "chunk_id": "rules-f13bffa51723d800",
+          "quote": "Monster and Vehicle units are eligible to shoot in their controlling player’s Shooting phase even while they are within Engagement Range of one or more enemy units. Ranged weapons equipped by Monster and Vehicle units can target one or more of the enemy units they are within Engagement Range of, even if other friendly units are also within Engagement Range of the same enemy unit. Each time a Monster or Vehicle model makes a ranged attack, if its unit was within Engagement Range of one or more enemy units when it selected its targets, unless that attack is made with a Pistol (pg 25), subtract 1 from that attack’s Hit roll."
+        },
+        {
+          "chunk_id": "rules-a39d1b5ecf262990",
+          "quote": "- Monsters and Vehicles can shoot, and be shot at, even while they are within Engagement Range of enemy units. Each time a ranged attack is made by or against such a unit, subtract 1 from that attack’s Hit roll (unless shooting with a Pistol)."
+        }
+      ]
+    },
+    {
+      "id": "case_summary",
+      "kind": "summary",
+      "question": "How is a player's level of control over an objective marker determined, and how do models interact with objective markers positionally during movement?",
+      "reference": "To determine a player's level of control over an objective marker, add together the Objective Control (OC) characteristics of all models from that player's army that are within range (within 3 inches horizontally and 5 inches vertically) of the objective marker. Regarding movement, models can move over objective markers as if they were not there, but they cannot end a move on top of an objective marker.",
+      "evidence": [
+        {
+          "chunk_id": "rules-6a73f591a6143436",
+          "quote": "Models can move over objective markers as if they were not there, but they cannot end a move on top of an objective marker."
+        },
+        {
+          "chunk_id": "rules-6a73f591a6143436",
+          "quote": "A model is within range of an objective marker if it is within 3\" horizontally and 5\" vertically of that objective marker."
+        },
+        {
+          "chunk_id": "rules-6a73f591a6143436",
+          "quote": "To determine a player’s Level of Control over an objective marker, add together the OC characteristics of all the models from that player’s army that are within range of that objective marker."
+        }
+      ]
+    },
+    {
+      "id": "case_single_hop",
+      "kind": "single_hop",
+      "question": "In the Only War mission, what are the precise restrictions regarding minimum distances when setting up objective markers?",
+      "reference": "Objective markers cannot be placed within 6 inches of any battlefield edge, or within 9 inches of any other objective markers.",
+      "evidence": [
+        {
+          "chunk_id": "rules-adf8c8fdc545b9e9",
+          "quote": "Objective markers cannot be placed within 6\" of any battlefield edge, or within 9\" of any other objective markers."
+        }
+      ]
+    },
+    {
+      "id": "case_multi_hop",
+      "kind": "multi_hop",
+      "question": "In the Only War mission, when can a player start scoring Victory points from the 'Capture and Control' objective, and how is control of those objective markers established?",
+      "reference": "Starting from the second battle round, at the end of each player's Command phase, the player whose turn it is scores 1 VP for each objective marker they control (up to a maximum of 3 VP per turn). To control an objective marker, a player must have models within range of it (within 3\" horizontally and 5\" vertically) such that their combined Objective Control (OC) characteristics of those models is greater than their opponent's.",
+      "evidence": [
+        {
+          "chunk_id": "rules-3f939d87a994f950",
+          "quote": "Starting from the second battle round, at the end of each player’s Command phase, the player whose turn it is scores 1 Victory point (VP) for each objective marker they control (to a maximum of 3VP per turn)."
+        },
+        {
+          "chunk_id": "rules-6a73f591a6143436",
+          "quote": "To control an objective marker, a player will first need to move models within range of it. A model is within range of an objective marker if it is within 3\" horizontally and 5\" vertically of that objective marker."
+        },
+        {
+          "chunk_id": "rules-6a73f591a6143436",
+          "quote": "To determine a player’s Level of Control over an objective marker, add together the OC characteristics of all the models from that player’s army that are within range of that objective marker. A player will control an objective marker at the end of any phase if their Level of Control over it is greater than their opponent’s."
+        }
+      ]
+    },
+    {
+      "id": "summary_stratagems_general_rules",
+      "kind": "summary",
+      "question": "What are the core general rules and restrictions governing how Command Points and Stratagems function during a battle?",
+      "reference": "Command points can be spent during the battle to use Stratagems. When you use a Stratagem, reduce your CP total by the amount listed on that Stratagem. If you do not have enough CP for a specific Stratagem, you cannot use it. You can use the same Stratagem multiple times during a battle, but you cannot use the same Stratagem more than once in the same phase. Every Stratagem also belongs to one of four categories: Battle Tactic, Epic Deed, Strategic Ploy, or Wargear.",
+      "evidence": [
+        {
+          "chunk_id": "rules-d4272e1a02298d8c",
+          "quote": "Command points can be spent during the battle to use Stratagems. All players can use the Core Stratagems presented here. Additional Stratagems can be found in Codexes and other publications."
+        },
+        {
+          "chunk_id": "rules-d4272e1a02298d8c",
+          "quote": "When you use a Stratagem, reduce your CP total by the amount listed on that Stratagem. If you do not have enough CP for a specific Stratagem, you cannot use it. You can use the same Stratagem multiple times during a battle, but you cannot use the same Stratagem more than once in the same phase."
+        },
+        {
+          "chunk_id": "rules-f7fda41171b15cb0",
+          "quote": "Each Stratagem belongs to one of four categories, as described below. There are some rules (especially in Crusade games) that interact with Stratagems of a particular category."
+        }
+      ]
+    },
+    {
+      "id": "single_hop_fire_overwatch",
+      "kind": "single_hop",
+      "question": "What are the specific timing conditions, target requirements, and restrictions when using the Fire Overwatch Stratagem?",
+      "reference": "The Fire Overwatch Stratagem costs 1CP and is a Core – Strategic Ploy Stratagem. It can be used during your opponent’s Movement or Charge phase, just after an enemy unit is set up or when an enemy unit starts or ends a Normal, Advance, Fall Back or Charge move. The target must be one unit from your army that is within 24\" of that enemy unit and that would be eligible to shoot if it were your Shooting phase. The effect allows your unit to shoot that enemy unit as if it were your Shooting phase, but with the restriction that until the end of the phase, each time a model makes a ranged attack, an unmodified Hit roll of 6 is required to score a hit regardless of Ballistic Skill or modifiers. Additionally, you can only use this Stratagem once per turn.",
+      "evidence": [
+        {
+          "chunk_id": "rules-3f533b800b955e8f",
+          "quote": "WHEN: Your opponent’s Movement or Charge phase, just after an enemy unit is set up or when an enemy unit starts or ends a Normal, Advance, Fall Back or Charge move."
+        },
+        {
+          "chunk_id": "rules-3f533b800b955e8f",
+          "quote": "TARGET: One unit from your army that is within 24\" of that enemy unit and that would be eligible to shoot if it were your Shooting phase."
+        },
+        {
+          "chunk_id": "rules-3f533b800b955e8f",
+          "quote": "EFFECT: Your unit can shoot that enemy unit as if it were your Shooting phase."
+        },
+        {
+          "chunk_id": "rules-3f533b800b955e8f",
+          "quote": "RESTRICTIONS: Until the end of the phase, each time a model in your unit makes a ranged attack, an unmodified Hit roll of 6 is required to score a hit, irrespective of the attacking weapon’s Ballistic Skill or any modifiers. You can only use this Stratagem once per turn."
+        }
+      ]
+    },
+    {
+      "id": "multi_hop_phase_restriction_and_cp",
+      "kind": "multi_hop",
+      "question": "If a player uses the Counter-Offensive Stratagem during the Fight phase, can they use that exact same Counter-Offensive Stratagem a second time later in that exact same Fight phase, and what general rule governs this?",
+      "reference": "No, a player cannot use the Counter-Offensive Stratagem a second time in the same phase. Although Command Points can be spent to use Stratagems multiple times during a battle, the general rules explicitly state that you cannot use the same Stratagem more than once in the same phase. Counter-Offensive itself is a Stratagem used during the Fight phase, and its use is bound by these core restrictions.",
+      "evidence": [
+        {
+          "chunk_id": "rules-d4272e1a02298d8c",
+          "quote": "You can use the same Stratagem multiple times during a battle, but you cannot use the same Stratagem more than once in the same phase."
+        },
+        {
+          "chunk_id": "rules-1c536b1d25bb824c",
+          "quote": "COUNTER-OFFENSIVE — 2CP... WHEN: Fight phase, just after an enemy unit has fought."
+        }
+      ]
+    }
+  ]
+}

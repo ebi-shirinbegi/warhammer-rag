@@ -1,0 +1,116 @@
+{
+  "dataset_sha256": "3a618f49c9fa821a405f18211e6f21c2ecb810893ac1abf63ae35e34eca0bb73",
+  "scope": "development retrieval cases; not held-out answer evaluation",
+  "k": 5,
+  "case_count": 10,
+  "hit_rate": 1.0,
+  "mean_reciprocal_rank": 0.875,
+  "results": [
+    {
+      "id": "grenades",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-f6256cf0d372203a"
+      ]
+    },
+    {
+      "id": "overwatch",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-3f533b800b955e8f",
+        "rules-df1879349c99bbdd",
+        "rules-7a9e97d7ddb38199",
+        "rules-a9ae0d98d292e7d9",
+        "rules-a39ebb440d318480"
+      ]
+    },
+    {
+      "id": "wound",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-14c81b5ac656e9ce",
+        "rules-f9bcd9a9f0a6904f",
+        "rules-a69e0d8ab99c94f6",
+        "rules-6bc8ec4db5e46035",
+        "rules-280540d56e600d54"
+      ]
+    },
+    {
+      "id": "scoring",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-3f939d87a994f950",
+        "rules-8f7a812ca70dc022",
+        "rules-a545dc1c27da19b4",
+        "rules-d3840199678b3cd7",
+        "rules-c550484a2a04598b"
+      ]
+    },
+    {
+      "id": "charge",
+      "rank": 4,
+      "retrieved_ids": [
+        "rules-735532c5d48498cc",
+        "rules-e6e62d25f84e0714",
+        "rules-3f533b800b955e8f",
+        "rules-2080fc3a68c9bc70",
+        "rules-d3840199678b3cd7"
+      ]
+    },
+    {
+      "id": "coherency",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-ed58e0e9c8afdcc5",
+        "rules-465c127c93759986",
+        "rules-35f489566c50bfb8",
+        "rules-c1e39c393e137267",
+        "rules-11092ffbfa7118f9"
+      ]
+    },
+    {
+      "id": "shock",
+      "rank": 2,
+      "retrieved_ids": [
+        "rules-6c966cde0eff661e",
+        "rules-d1fa6c1afb7fe5cf",
+        "rules-f42413445a266ffc",
+        "rules-e026451f7fb84519",
+        "rules-781a0d7576f52cc4"
+      ]
+    },
+    {
+      "id": "objective",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-2313861b9467c6af",
+        "rules-6a73f591a6143436",
+        "rules-3f939d87a994f950",
+        "rules-3a834aa2dd6e2e28",
+        "rules-adf8c8fdc545b9e9"
+      ]
+    },
+    {
+      "id": "rapid",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-142c32aa8e671cbf",
+        "rules-a9ae0d98d292e7d9",
+        "rules-bd73f64baa154931",
+        "rules-075d38eb392f4b1f",
+        "rules-3f533b800b955e8f"
+      ]
+    },
+    {
+      "id": "heroic",
+      "rank": 1,
+      "retrieved_ids": [
+        "rules-075d38eb392f4b1f",
+        "rules-d4272e1a02298d8c",
+        "rules-1de5985cd1bc0e02",
+        "rules-c6d737d9b3be2fb0",
+        "rules-3ef72069527b4d16"
+      ]
+    }
+  ]
+}

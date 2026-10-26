@@ -1,19 +1,22 @@
 # Warhammer RAG
 
+Class project by **Mohammad Ebrahim SHARIFI** and **Muhammad Ibrar Ul HASSAN**.
+
 A conversational retrieval-augmented generation project for Warhammer 40,000,
 combining the Core Rules PDF with a SQLite database of unit datasheets.
-The target system supports rule lookups, structured queries, questions requiring
+The application supports rule lookups, structured queries, questions requiring
 both sources, and conversational follow-ups through Google AI Studio.
 
 ## Status
 
-Implemented: typed configuration, offline diagnostics, a Gemini connection check,
-protected SQLite access and a reproducible 60-page rulebook parse with page citations,
-reviewed graphical tables and complete stratagem records. Tests and development
-tooling run offline. Rulebook chunking, lexical retrieval and parameterized SQLite
-unit lookups are implemented. A themed local browser chat supports Gemini answers, source routing, citations
-and conversational follow-ups. End-to-end answer evaluation remains under development. The earlier Docling parser is retained
-as an experiment.
+The application includes a parsed 60-page rulebook, text search, read-only SQLite
+unit lookups, and a local browser chat with citations and saved conversations.
+Google AI Studio provides planning and answer generation. Exact unit-stat lookups
+can run without an API call. Offline tests and separate retrieval and answer
+evaluation commands are included. See [evaluation](docs/evaluation.md) for the
+benchmark, scoring method and limitations. The published run includes twelve
+text questions and four live database/conversation scenarios;
+[results and known weaknesses](docs/evaluation_results.md) are included.
 
 ## Setup
 
@@ -24,7 +27,7 @@ application and development dependencies are locked in `uv.lock`.
 ```sh
 ./scripts/setup.sh
 ./scripts/uv run --locked warhammer-rag doctor
-./scripts/check.sh
+./scripts/uv run --locked warhammer-rag index
 ```
 
 The setup script installs project-local uv and Python, creates `.venv`, synchronizes
@@ -43,12 +46,37 @@ cp -n .env.example .env
 |---|---|
 | `GOOGLE_API_KEY` | Google AI Studio API key |
 | `GOOGLE_MODEL` | Model identifier available to the configured account |
+| `GOOGLE_REQUESTS_PER_MINUTE` | Shared request pacing, default 10; set to your project limit |
 | `RAG_PROJECT_ROOT` | Optional checkout path override |
 | `RAG_RAW_DIR` | Source directory; defaults to `data/raw` |
 | `RAG_PROCESSED_DIR` | Parsed output; defaults to `data/processed` |
 | `RAG_INDEX_DIR` | Retrieval indexes; defaults to `data/indexes` |
 | `RAG_EVAL_DIR` | Evaluation fixtures; defaults to `evaluation/datasets` |
 | `RAG_REPORT_DIR` | Run reports; defaults to `evaluation/reports` |
+
+Edit the local `.env` file and fill in both fields:
+
+```dotenv
+GOOGLE_API_KEY=your_google_ai_studio_api_key
+GOOGLE_MODEL=your_available_model_id
+```
+
+Use the model's API identifier from your own Google AI Studio project. Both values
+are placeholders above. The application uses your project's API access and limits;
+a Gemini app subscription is not required by the code. No key is included in this
+repository. Keep `.env` local; do not put credentials in `.env.example`.
+
+Then start the browser interface:
+
+```sh
+./scripts/uv run --locked warhammer-rag check-api
+./scripts/uv run --locked warhammer-rag chat
+```
+
+The parsed rulebook and source database are included, so parsing is not required
+to try the application. Building the index once is required. For a first question,
+try "How does scoring work in the Only War mission?". A question such as
+"Can an Intercessor Squad use grenades?" exercises both source channels.
 
 Commands run from the repository root. Settings load `.env` from the current
 working directory; environment variables take precedence. Relative data paths
@@ -158,7 +186,10 @@ the current Markdown and JSON artifacts are included under `data/processed/`.
 ## Documentation
 
 - [Requirements](docs/project_brief.md)
-- [Architecture](docs/architecture.md)
+- [Architecture and technical choices](docs/architecture.md)
+- [Evaluation method](docs/evaluation.md)
+- [Evaluation results](docs/evaluation_results.md)
+- [Setup verification](docs/verification.md)
 - [Ingestion quality criteria](docs/ingestion.md)
 - [Database audit](docs/data_audit.md)
 - [Source data dictionary](docs/data_dictionary.md)
@@ -171,6 +202,7 @@ Tool references: [uv](https://docs.astral.sh/uv/getting-started/installation/) a
 
 See [the evaluation workflow](docs/evaluation.md) for generated benchmark review,
 resumable answer scoring and limitations. `make generate-eval` generates draft
-questions through Gemini; `make evaluate` evaluates a reviewed dataset.
+questions through Gemini into `evaluation/reports/text-draft.json` without replacing
+the published benchmark; `make evaluate` evaluates the included reviewed dataset.
 `make evaluate-retrieval` runs the existing offline retrieval checks.
 `make chat` starts the interface and `make check` runs the offline checks.

@@ -9,7 +9,7 @@ parse:
 index:
 	./scripts/uv run --locked warhammer-rag index
 generate-eval:
-	./scripts/uv run --locked warhammer-rag generate-eval
+	./scripts/uv run --locked warhammer-rag generate-eval --output evaluation/reports/text-draft.json
 evaluate:
 	./scripts/uv run --locked warhammer-rag evaluate-answers
 evaluate-retrieval:
